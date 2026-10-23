@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vayra | Senior AI-native teams from Latin America, on your clock</title>
+<meta name="description" content="Hire senior, AI-native developers, AI engineers, GTM engineers and SDRs from Latin America who work your hours. Free to interview, rates in 24 hours, pay only when you hire.">
+<link rel="canonical" href="https://vayra.team/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B0C0A">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vayra">
+<meta property="og:url" content="https://vayra.team/">
+<meta property="og:title" content="Vayra | Senior AI-native teams from Latin America, on your clock">
+<meta property="og:description" content="Hire senior, AI-native developers, AI engineers, GTM engineers and SDRs from Latin America who work your hours. Free to interview, rates in 24 hours, pay only when you hire.">
+<meta property="og:image" content="https://vayra.team/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vayra. Senior AI-native teams, on your clock. Free to interview, rates in 24 hours, pay only when you hire.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vayra | Senior AI-native teams from Latin America, on your clock">
+<meta name="twitter:description" content="Hire senior, AI-native developers, AI engineers, GTM engineers and SDRs from Latin America who work your hours. Free to interview, rates in 24 hours, pay only when you hire.">
+<meta name="twitter:image" content="https://vayra.team/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Vayra: navy site, warm paper for the how-it-works section. One dark look. */
+:root{
+  color-scheme: dark;
+  --ink:#0B0C0A;        /* page background, deep navy */
+  --ink-2:#151713;      /* raised surfaces */
+  --ink-3:#1F211B;      /* hover / lines strong */
+  --line:#2A2D27;       /* hairlines */
+  --fg:#F2F4EC;         /* main text */
+  --muted:#A8AD9E;      /* secondary text */
+  --sun:#C6F432;
+  --sun-t:#D4FA5A;        /* accent: Andes sun */
+  --sun-ink:#0B0C0A;    /* text on accent */
+  --sky:#D4FA5A;        /* secondary accent: celeste */
+  --leaf:#D4FA5A;       /* ok state */
+  --paper:#131410;      /* cafe wall */
+  --paper-ink:#F2F4EC;  /* text on wall */
+  --paper-muted:#A8AD9E;
+  --f-display:"Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --f-body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-poster:"Anton", "Oswald", "Arial Narrow", Impact, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--fg);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+.lede{color:var(--muted);font-size:19px;max-width:58ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px/1 var(--f-body);text-decoration:none;padding:15px 22px;border-radius:999px;border:1px solid transparent;transition:transform .2s ease, background .2s ease, border-color .2s ease}
+.btn-sun{background:var(--sun);color:var(--sun-ink)}
+.btn-sun:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--fg)}
+.btn-ghost:hover{border-color:var(--muted)}
+.btn .arr{font-family:var(--f-mono)}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb, var(--ink) 86%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 22px/1 var(--f-display);letter-spacing:-.02em}
+.brand svg{width:30px;height:30px}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--muted);font-size:15px}
+.nav ul a:hover{color:var(--fg)}
+.nav .btn{padding:11px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 10%, color-mix(in srgb, var(--sun) 12%, transparent), transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-block:88px 96px}
+.hero h1{font-size:clamp(36px,4.4vw,58px);font-weight:800;margin-block:18px 22px}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding-block:104px}
+.sec-head{display:grid;gap:16px;margin-bottom:48px;max-width:760px}
+.sec-head h2{font-size:clamp(32px,4.4vw,54px);font-weight:800}
+
+/* offers */
+.offers{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
+.offer{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.offer h3{font-size:26px;font-weight:700}
+.offer p{color:var(--muted)}
+.offer.lead{background:linear-gradient(160deg, color-mix(in srgb, var(--sun) 16%, var(--ink-2)), var(--ink-2) 60%);border-color:color-mix(in srgb, var(--sun) 40%, var(--line))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px;list-style:none;margin-bottom:0;padding-left:0}
+.chips li{font-size:13.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--fg)}
+.start{display:grid;grid-template-columns:auto 1fr 1fr;gap:18px;margin-top:18px;align-items:stretch}
+.start .label{font-family:var(--f-display);font-weight:700;font-size:20px;align-self:center;padding-right:10px}
+.start div.opt{border-top:1px solid var(--line);padding-top:16px}
+.start h4{margin:0 0 4px;font:600 17px/1.3 var(--f-body)}
+.start p{color:var(--muted);font-size:16px}
+
+/* gtm system */
+.gtm{background:var(--ink-2);border-block:1px solid var(--line)}
+.gtm-note{margin-top:22px;color:var(--muted);font-size:16px;max-width:70ch}
+
+
+/* hero layout */
+.hero .wrap{grid-template-areas:"top calc" "trust calc";grid-template-rows:auto 1fr;align-items:start;row-gap:0;padding-block:64px 88px}
+.hero-top{grid-area:top}
+.hero-trust{grid-area:trust}
+.hero .calc{grid-area:calc}
+.hero h1{margin-top:8px}
+
+
+
+.equiv{display:flex;align-items:center;justify-content:space-between;gap:12px 16px;flex-wrap:wrap}
+.equiv p{font-size:15px;color:var(--fg);max-width:32ch}
+.equiv b{color:var(--sun)}
+.people{display:flex;align-items:flex-end;gap:5px}
+.people .eq{font:800 20px/1 var(--f-display);color:var(--muted);margin:0 4px 3px}
+.people .p{position:relative;width:18px;height:25px;animation:pop .35s ease both}
+.people .p svg{position:absolute;inset:0;width:18px;height:25px}
+.people .p .fill{position:absolute;inset:0;overflow:hidden;width:var(--w,100%)}
+.people .p.us svg{fill:#7F8F5E}
+.people .p .ghost svg{fill:#4C5F26}
+.people .p .fill svg{fill:var(--sun)}
+@keyframes pop{from{transform:translateY(6px);opacity:0}to{transform:none;opacity:1}}
+
+/* promises */
+.promises{display:grid;gap:10px;list-style:none;margin:26px 0 0;padding:0}
+.promises li{display:flex;gap:12px;align-items:flex-start;font-size:16.5px;color:var(--fg)}
+.promises svg{flex:none;width:20px;height:20px;margin-top:2px}
+.hero .cta{margin-top:30px}
+.textlink{color:var(--fg);font-weight:600;text-decoration:underline;text-decoration-color:var(--sun);text-underline-offset:5px;padding-block:12px}
+
+/* calculator */
+.calc{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;padding:26px 28px;display:grid;gap:16px;min-width:0;box-shadow:0 30px 70px -40px #000}
+.calc h2{font-size:clamp(22px,2.2vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.calc .sub{color:var(--muted);font-size:14.5px;margin-top:6px}
+.opt{display:grid;gap:8px;min-width:0}
+.opt-l{font-size:13.5px;color:var(--muted)}
+.opt-l output{font:800 17px/1 var(--f-display);color:var(--fg)}
+.roles{display:flex;flex-wrap:wrap;gap:8px}
+.roles button{font:600 14.5px/1 var(--f-body);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:999px;padding:0 16px;min-height:44px;cursor:pointer;transition:background-color .15s ease, border-color .15s ease}
+.roles button:hover{border-color:var(--muted)}
+.roles button[aria-pressed="true"]{background:var(--sun);color:var(--sun-ink);border-color:var(--sun)}
+.opt.two{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:16px;align-items:start}
+.cityselect{appearance:none;-webkit-appearance:none;font:600 16px/1.2 var(--f-body);color:var(--fg);background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23EEF1FA' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat right 16px center/12px 8px;border:1px solid var(--line);border-radius:999px;min-height:46px;padding:0 44px 0 18px;cursor:pointer;width:100%}
+.cityselect:hover{border-color:var(--muted)}
+.cityselect option,.cityselect optgroup{color:#111;background:#fff}
+.geo-note{font-size:12.5px;color:var(--muted);min-height:1.2em}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:30px;background:transparent;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--sun) var(--p,0%),#38471A var(--p,0%))}
+input[type=range]::-moz-range-track{height:8px;border-radius:999px;background:#38471A}
+input[type=range]::-moz-range-progress{height:8px;border-radius:999px;background:var(--sun)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--fg);border:4px solid var(--sun);margin-top:-9px}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--fg);border:4px solid var(--sun)}
+.result{display:grid;gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+.bar-row{display:grid;gap:7px}
+.bar-top{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;color:var(--muted)}
+.bar-top strong{color:var(--fg);font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.bar{height:10px;border-radius:999px;background:#38471A;overflow:hidden}
+.bar span{display:block;height:100%;border-radius:999px;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.bar .us{background:#7F8F5E}
+.bar .la{background:var(--sun)}
+.loss{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.loss .l{color:var(--muted);font-size:14px}
+.loss strong{display:block;font:800 clamp(32px,3.8vw,46px)/1 var(--f-display);color:var(--sun);font-variant-numeric:tabular-nums;margin:4px 0}
+.per{display:flex;gap:6px}
+.per button{font:600 13px/1 var(--f-body);color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:0 12px;min-height:36px;cursor:pointer}
+.per button[aria-pressed="true"]{color:var(--fg);border-color:var(--fg)}
+.calc .go .btn{width:100%;justify-content:center}
+.calc .go p{color:var(--muted);font-size:13px;text-align:center;margin-top:10px}
+.how summary{cursor:pointer;color:var(--muted);font-size:13px;font-weight:600;list-style:none;display:inline-flex;align-items:center;gap:8px;min-height:32px}
+.how summary::-webkit-details-marker{display:none}
+.how summary::after{content:"+";color:var(--sun);font-size:16px}
+.how[open] summary::after{content:"\2212"}
+.how .fine{color:var(--muted);font-size:13px;line-height:1.55;margin-top:6px}
+.how a{color:var(--muted)}
+
+/* how it works, on paper */
+.paper{background:var(--paper);color:var(--paper-ink)}
+.paper h2{color:var(--paper-ink)}
+.paper .lede{color:var(--paper-muted)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;list-style:none;margin:0;padding:0;border-top:2px solid var(--paper-ink)}
+.steps li{padding:22px 22px 0 0;display:grid;gap:8px;align-content:start;position:relative}
+.steps li:not(:last-child)::after{content:"\2192";position:absolute;right:14px;top:22px;color:#ABD558;font-weight:700}
+.steps .when{font:800 15px/1.2 var(--f-display);color:#C5E28C}
+.steps h3{font-size:21px;font-weight:700;color:var(--paper-ink);padding-right:28px}
+.steps p{color:var(--paper-muted);font-size:15.5px;padding-right:20px}
+.guar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:64px}
+.guar div{display:grid;gap:8px;align-content:start}
+.guar svg{width:28px;height:28px}
+.guar h3{font-size:21px;font-weight:700;color:var(--paper-ink)}
+.guar p{color:var(--paper-muted);font-size:15.5px}
+
+/* time zones */
+.tz-top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.tz-top .opt{min-width:240px}
+
+/* quote form */
+.quote{position:relative}
+.quote .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;padding-block:110px;align-items:start}
+.quote h2{font-size:clamp(32px,4.2vw,52px);font-weight:800}
+.quote .lede{margin-top:16px}
+.quote .promises{margin-top:24px}
+.q-alt{margin-top:22px;color:var(--muted);font-size:14.5px}
+.qform{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.qform .full{grid-column:1 / -1}
+.field{display:grid;gap:7px;min-width:0}
+.field label{font-size:13.5px;color:var(--muted)}
+.field input,.field select,.field textarea{font:500 16px/1.4 var(--f-body);color:var(--fg);background:#20231A;border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-height:48px;width:100%}
+.field select{appearance:none;-webkit-appearance:none;background:#20231A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23EEF1FA' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat right 14px center/12px 8px;padding-right:40px}
+.field select option,.field select optgroup{color:#111;background:#fff}
+.field textarea{min-height:96px;resize:vertical}
+.field textarea::placeholder,.field input::placeholder{color:#AAB88F}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--sun);outline-offset:1px;border-color:transparent}
+.field .err{font-size:13px;color:#F2A3A3}
+.field .err:empty,.form-status:empty{display:none}
+.field.bad input{border-color:#F2A3A3}
+.need{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px;padding-top:16px;border-top:1px solid var(--line)}
+.need-l{grid-column:1 / -1;font-size:13.5px;color:var(--fg);font-weight:600}
+.qform .send{display:grid;gap:10px}
+.qform .send .btn{justify-content:center}
+.qform .send p{color:var(--muted);font-size:13.5px;text-align:center}
+.form-status{font-size:15px;color:var(--leaf);min-height:1.3em}
+
+/* exit dialog */
+.exit{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:max(16px, env(safe-area-inset-top,0px)) max(16px, env(safe-area-inset-right,0px)) max(16px, env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));background:rgba(5,8,18,.72)}
+
+
+/* gtm loop */
+.gl{border:1px solid var(--line);border-radius:18px;background:var(--ink);padding:30px 30px 0;overflow:hidden}
+.gl-track{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.gl-track::before{content:"";position:absolute;left:10%;right:10%;top:17px;height:2px;background:var(--line)}
+.gl-fill{position:absolute;left:10%;top:17px;height:2px;width:calc(var(--i,0) * 20%);background:var(--sun);transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.gl-track button{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;background:none;border:0;padding:0 4px 20px;color:var(--muted);font:600 15px/1.2 var(--f-body);cursor:pointer;min-height:44px}
+.gl-track button i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink-2);border:2px solid var(--line);font:500 13px/1 var(--f-mono);font-style:normal;color:var(--muted);transition:background-color .3s ease, border-color .3s ease, color .3s ease}
+.gl-track button.done i{border-color:var(--sun);color:var(--fg)}
+.gl-track button[aria-selected="true"]{color:var(--fg)}
+.gl-track button[aria-selected="true"] i{background:var(--sun);border-color:var(--sun);color:var(--sun-ink)}
+.gl-track button:hover i{border-color:var(--muted)}
+.gl-panel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr) minmax(0,1.3fr);gap:28px;padding:26px 0 28px;border-top:1px solid var(--line)}
+.gl-panel > div{transition:opacity .25s ease}
+.gl-panel.swap > div{opacity:0}
+.gl-k{display:block;font-size:13.5px;color:var(--muted);margin-bottom:6px}
+.gl-panel b{font:700 21px/1.2 var(--f-display);color:var(--sun)}
+.gl-panel p{font-size:17px;color:var(--fg)}
+.gl-timer{height:3px;background:var(--line);margin:0 -30px}
+.gl-timer span{display:block;height:100%;width:0;background:var(--sun)}
+.gl.run .gl-timer span{animation:gltime 4.6s linear forwards}
+@keyframes gltime{to{width:100%}}
+
+
+/* cities, on paper */
+.wall{background:var(--paper);color:var(--paper-ink);position:relative;overflow:hidden}
+.wall::before{content:"";position:absolute;inset:0;opacity:.5;background:radial-gradient(circle at 20% 30%, rgba(198,244,50,.10) 0 1px, transparent 1.5px) 0 0/18px 18px, radial-gradient(circle at 70% 60%, rgba(198,244,50,.08) 0 1px, transparent 1.5px) 0 0/23px 23px}
+.wall .wrap{position:relative}
+.wall h2{color:var(--paper-ink);font-family:var(--f-poster);font-weight:400;text-transform:uppercase;letter-spacing:0;font-size:clamp(44px,7.4vw,96px);line-height:.9}
+.wall .lede{color:var(--paper-muted)}
+.atlas{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:center;margin-top:52px}
+.mapposter{position:relative;margin:0;background:#fff;padding:10px;box-shadow:0 2px 0 rgba(0,0,0,.06), 0 24px 40px -22px rgba(0,0,0,.55);transform:rotate(-.6deg)}
+.mapposter::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(-3deg);background:rgba(196,212,255,.8);box-shadow:0 1px 2px rgba(0,0,0,.08);z-index:2}
+.mapfield{position:relative;background:#151712;aspect-ratio:600/764}
+.mapfield > svg{position:absolute;inset:0;width:100%;height:100%}
+.mapfoot{display:flex;justify-content:space-between;gap:12px;background:#151712;color:#BECBA5;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;padding:12px 16px;border-top:1px solid #38471A}
+.at-pin{position:absolute;left:var(--x);top:var(--y);width:28px;height:28px;margin:-14px 0 0 -14px;border:0;padding:0;background:transparent;cursor:pointer;border-radius:50%;z-index:1}
+.at-pin::before{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--sun);transition:inset .25s ease, background-color .25s ease}
+.at-pin:hover::before{inset:7px}
+.at-pin[aria-pressed="true"]{z-index:3}
+.at-pin[aria-pressed="true"]::before{inset:7px;background:#fff;box-shadow:0 0 0 4px var(--sun)}
+.at-pin:focus-visible{outline:2px solid #fff;outline-offset:0}
+.at-label{position:absolute;left:var(--x);top:var(--y);transform:translate(18px,-50%);font-family:var(--f-poster);font-size:clamp(14px,1.9vw,21px);line-height:1;text-transform:uppercase;color:#151712;background:var(--sun);padding:5px 8px 4px;white-space:nowrap;pointer-events:none;z-index:4}
+.at-label.left{transform:translate(calc(-100% - 18px),-50%)}
+.at-you{position:absolute;left:var(--x);top:var(--y);display:flex;align-items:center;gap:7px;transform:translate(-6px,-6px);font-family:var(--f-mono);font-size:11px;text-transform:uppercase;color:#F5F6F2;pointer-events:none;white-space:nowrap;transition:left .5s ease, top .5s ease}
+.at-you i{width:12px;height:12px;border-radius:50%;border:2px solid #F5F6F2;background:#151712;flex:none}
+.at-you.left{flex-direction:row-reverse;transform:translate(calc(-100% + 6px),-6px)}
+.atside{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;min-width:0}
+.atside > *{min-width:0}
+.at-q{display:block;font-size:14px;font-weight:600;color:var(--paper-muted);margin:0 0 10px}
+.wall .cityselect{color:var(--paper-ink);border-color:rgba(241,245,249,.32);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%232A2118' stroke-width='1.8'/%3E%3C/svg%3E");max-width:340px}
+.wall .cityselect:hover{border-color:var(--paper-ink)}
+.citychips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chip{font:600 14px/1 var(--f-body);color:var(--paper-ink);background:transparent;border:1px solid rgba(241,245,249,.28);border-radius:999px;padding:0 14px;min-height:40px;cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:var(--paper-ink)}
+.chip[aria-pressed="true"]{background:#ABD558;color:#FFFFFF;border-color:#ABD558}
+.cityhead{display:grid;gap:10px;padding-top:22px;border-top:1px solid rgba(241,245,249,.18)}
+.ch-name{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;font-family:var(--f-poster);font-size:clamp(40px,4.4vw,58px);line-height:.95;text-transform:uppercase;color:var(--paper-ink)}
+.ch-country{font-family:var(--f-body);font-size:16px;font-weight:600;text-transform:none;color:var(--paper-muted)}
+.say{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,2.4vw,30px);line-height:1.3;color:var(--paper-ink);max-width:28ch;text-wrap:pretty}
+.say b{font-weight:800;background:linear-gradient(transparent 62%, rgba(198,244,50,.55) 62%)}
+.cityline{color:var(--paper-muted);max-width:44ch}
+.strip{display:grid;gap:8px}
+.strip-row{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;align-items:center;font-size:13px;color:var(--paper-muted)}
+.strip-bar{position:relative;height:14px;border-radius:999px;background:rgba(241,245,249,.10);overflow:hidden}
+.strip-bar span{position:absolute;top:0;bottom:0;border-radius:999px;transition:left .5s ease, width .5s ease}
+.strip-bar .you-band{background:var(--paper-ink)}
+.strip-bar .team-band{background:#ABD558}
+.strip-axis{display:flex;justify-content:space-between;margin-left:108px;font-family:var(--f-mono);font-size:11px;color:var(--paper-muted)}
+.shared{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--paper-ink)}
+.posters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;margin-top:96px}
+.poster{container-type:inline-size;position:relative;margin:0;background:#fff;padding:10px;box-shadow:0 2px 0 rgba(0,0,0,.06), 0 24px 40px -22px rgba(0,0,0,.55);transform:rotate(var(--tilt));transition:transform .4s ease}
+.poster:hover{transform:rotate(0deg) translateY(-4px)}
+.poster::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(-3deg);background:rgba(196,212,255,.8);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.poster svg{display:block;width:100%;height:auto}
+.poster .band{padding:6cqw 6cqw 6cqw;display:grid;grid-template-columns:minmax(0,1fr);gap:3cqw}
+.poster .band > *{min-width:0}
+.poster .city{font-family:var(--f-poster);font-weight:400;font-size:20cqw;overflow-wrap:anywhere;line-height:.86;text-transform:uppercase}
+.poster .line{font-size:max(15px,5.6cqw);line-height:1.3}
+.poster .foot{display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:max(11px,3.6cqw);text-transform:uppercase;margin-top:1cqw}
+.poster-go{font:600 max(13px,4cqw)/1 var(--f-body);color:inherit;background:none;border:0;padding:10px 0;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.p-mza{--tilt:-1.6deg}
+.p-mza .band{background:#374618;color:#DFEFC0}
+.p-mza .city{color:#C0DF81}
+.p-bue{--tilt:1.2deg}
+.p-bue .band{background:#465E17;color:#ECEEE9}
+.p-bue .city{color:#D5EAAB}
+.p-rio{--tilt:-.8deg}
+.p-rio .band{background:#4D671A;color:#EAECE5}
+.p-rio .city{color:#D0E8A1}
+.wall-close{margin-top:64px;font-family:var(--f-display);font-weight:700;font-size:clamp(22px,2.6vw,30px);color:var(--paper-ink);max-width:30ch}
+
+/* leaving: numbers, next steps, one field */
+.exit-card{position:relative;width:min(520px,100%);max-height:calc(100dvh - 32px);overflow:auto;background:var(--ink-2);color:var(--fg);border:1px solid var(--line);padding:34px 30px 24px;border-radius:18px;box-shadow:0 40px 90px -30px #000}
+.exit-k{font-size:14px;color:var(--muted)}
+.exit-card h2{font-size:clamp(26px,4vw,34px);font-weight:800;margin-top:8px}
+.exit-big{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-top:16px}
+.exit-big strong{font:800 clamp(38px,6vw,52px)/1 var(--f-display);color:var(--sun);font-variant-numeric:tabular-nums}
+.exit-big span{color:var(--muted);font-size:15px}
+.exit-next{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.exit-next li{display:grid;grid-template-columns:132px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.exit-next b{font:700 15px/1.3 var(--f-display);color:var(--sun)}
+.exit-next span{color:var(--fg)}
+.exit-form{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.exit-form input{flex:1 1 220px;min-width:0;font:500 16px/1.4 var(--f-body);color:var(--fg);background:#20231A;border:1px solid var(--line);border-radius:999px;padding:12px 18px;min-height:50px}
+.exit-form input::placeholder{color:#AAB88F}
+.exit-form input:focus{outline:2px solid var(--sun);outline-offset:1px;border-color:transparent}
+.exit-form .btn{flex:0 0 auto;justify-content:center}
+.exit-err{color:#F2A3A3;font-size:14px;margin-top:8px}
+.exit-err:empty{display:none}
+.exit-x{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:transparent;color:var(--muted);font-size:26px;line-height:1;cursor:pointer;border-radius:50%}
+.exit-x:hover{color:var(--fg)}
+.exit-later{display:block;margin:12px auto 0;background:none;border:0;color:var(--muted);text-decoration:underline;font:500 14px/1 var(--f-body);cursor:pointer;min-height:44px;padding:0 6px}
+.exit-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center}
+.exit-actions .exit-later{margin:0}
+#exit-b p{color:var(--muted);margin-top:12px}
+#exit-b p b{color:var(--fg)}
+.shine{position:relative;overflow:hidden}
+.shine::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent);transform:skewX(-18deg);animation:shine 2.8s ease-in-out .6s infinite}
+@keyframes shine{0%{left:-60%}45%,100%{left:130%}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* follow-up bar */
+.follow{position:fixed;left:50%;bottom:max(16px, env(safe-area-inset-bottom,0px));z-index:40;width:min(820px, calc(100% - 32px));display:flex;align-items:center;gap:14px;background:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 20px 50px -20px #000;transform:translate(-50%,160%);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.follow.on{transform:translate(-50%,0)}
+.follow p{flex:1;min-width:0;font-size:15px;color:var(--muted)}
+.follow p b{color:var(--sun);font-variant-numeric:tabular-nums}
+.follow .btn{padding:12px 18px;font-size:15px;white-space:nowrap}
+.follow-x{flex:none;width:40px;height:40px;border:0;background:transparent;color:var(--muted);font-size:22px;cursor:pointer;border-radius:50%}
+.follow-x:hover{color:var(--fg)}
+
+
+/* hero */
+.hero{background:linear-gradient(155deg, #4C6519 0%, #2B2F23 45%, var(--ink) 100%)}
+.hero::before{display:none}
+.loc{position:relative;display:inline-flex;align-items:center;gap:8px;font:600 15px/1 var(--f-body);color:#EEF0EB;padding:9px 14px 9px 12px;border:1px solid rgba(212,250,90,.35);border-radius:999px;cursor:pointer;transition:border-color .2s ease, background-color .2s ease}
+.loc:hover{border-color:var(--sun-t);background:rgba(212,250,90,.08)}
+.loc:focus-within{outline:2px solid var(--sun-t);outline-offset:3px}
+.loc .pin{width:13px;height:16px;color:var(--sun-t)}
+.loc .chev{width:11px;height:8px;color:var(--sun-t)}
+.h-select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px;appearance:none;-webkit-appearance:none}
+.h-select option,.h-select optgroup{color:#111;background:#fff}
+.hero h1{font-size:clamp(40px,5.2vw,68px);line-height:1.02;margin:22px 0 0;max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--sun-t)}
+.hero .lede{margin-top:18px;max-width:44ch;color:#DFE2D9}
+.clocks{display:flex;align-items:center;gap:18px;margin-top:34px;max-width:520px}
+.clk{display:grid;gap:4px;transition:opacity .3s ease}
+.clk.out{opacity:0}
+.clk b{font:700 clamp(26px,2.6vw,34px)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:#fff}
+.clk span{font-size:14px;color:#CCDDA9;white-space:nowrap}
+.flight{flex:1;position:relative;display:flex;align-items:center;gap:8px;min-width:70px;margin-bottom:22px;color:#fff}
+.flight i{flex:1;height:2px;background:linear-gradient(90deg, rgba(255,255,255,.7) 50%, transparent 0) 0 0/10px 2px repeat-x}
+.flight .plane{width:22px;height:22px;flex:none;animation:fly 4.5s ease-in-out infinite}
+@keyframes fly{0%,100%{transform:translateX(-6px)}50%{transform:translateX(6px)}}
+.clk-note{margin-top:14px;font-size:15px;color:#DFE2D9}
+.hero-trust .cta{margin-top:30px}
+.hero-trust .promises{margin-top:22px;gap:8px}
+.hero-trust .promises li{font-size:15px;color:#DFE2D9}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+
+/* the calculator as a white card */
+.calc{background:#fff;border-color:#fff;color:#20231B;box-shadow:0 40px 80px -40px rgba(0,0,0,.65)}
+.calc h2{color:#20231B}
+.calc .sub,.calc .opt-l,.calc .bar-top,.calc .loss .l,.calc .go p,.calc .how summary,.calc .how .fine,.calc .how a{color:#69784A}
+.calc .opt-l output,.calc .bar-top strong,.calc .equiv p{color:#20231B}
+.calc .roles button{color:#20231B;border-color:#E2E5DC}
+.calc .roles button:hover{border-color:#A6B587}
+.calc .roles button[aria-pressed="true"]{background:var(--sun);color:#fff;border-color:var(--sun)}
+.calc .cityselect{color:#20231B;border-color:#E2E5DC;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230B1233' stroke-width='1.8'/%3E%3C/svg%3E")}
+.calc .cityselect:hover{border-color:#A6B587}
+.calc input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(90deg,var(--sun) var(--p,0%),#EDEFEA var(--p,0%))}
+.calc input[type=range]::-moz-range-track{background:#EDEFEA}
+.calc input[type=range]::-webkit-slider-thumb{background:#fff;border-color:var(--sun)}
+.calc input[type=range]::-moz-range-thumb{background:#fff;border-color:var(--sun)}
+.calc .result{border-top-color:#EDEFEA}
+.calc .bar{background:#F1F3EE}
+.calc .bar .us{background:#B9C89A}
+.calc .loss strong{color:var(--sun)}
+.calc .per button{color:#69784A;border-color:#E2E5DC}
+.calc .per button[aria-pressed="true"]{color:#20231B;border-color:#20231B}
+.calc .equiv b{color:var(--sun)}
+.calc .people .p.us svg{fill:#B9C89A}
+.calc .people .p .ghost svg{fill:#EDEFEA}
+.calc .people .eq{color:#A6B587}
+
+/* blue text on dark */
+.gl-panel b,.exit-big strong,.exit-next b,.follow p b{color:var(--sun-t)}
+.faq summary::after{color:var(--sun-t)}
+.at-label{color:#fff}
+.chip[aria-pressed="true"]{color:#fff}
+.say b{background:linear-gradient(transparent 62%, rgba(198,244,50,.22) 62%)}
+
+
+/* v14 */
+:root{--eo:cubic-bezier(.22,1,.36,1);--pop:cubic-bezier(.34,1.56,.64,1)}
+.hero{background:linear-gradient(155deg, #1E2019 0%, #12130F 45%, var(--ink) 100%)}
+.hero h1{max-width:none}
+.h1v{display:block;max-width:13ch}
+.h1v em{font-style:normal;color:var(--sun-t)}
+.w{display:inline-block}
+.rot{position:relative;display:block;height:1.12em;overflow:hidden;color:var(--sun-t);margin-top:.04em}
+.rot-w{position:absolute;left:0;top:0;white-space:nowrap;opacity:0;transform:translateY(100%);transition:transform .6s var(--eo), opacity .6s var(--eo)}
+.rot-w.on{opacity:1;transform:none}
+.rot-w.off{opacity:0;transform:translateY(-100%)}
+.hero .lede b{color:var(--fg);font-weight:600;white-space:nowrap}
+.calc-k{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;font-weight:600;color:#4D6600}
+.calc-k::before{content:"";width:7px;height:7px;border-radius:50%;background:#4D6600}
+.calc .roles button[aria-pressed="true"]{color:var(--sun-ink)}
+.calc .loss strong,.calc .equiv b{color:#4D6600}
+.at-label,.chip[aria-pressed="true"]{color:var(--sun-ink)}
+.paper{background:var(--paper);border-block:1px solid var(--line)}
+.steps{grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.steps .when{color:var(--sun-t)}
+.steps li:not(:last-child)::after{color:var(--sun-t)}
+.hiw-go{margin-top:44px}
+.gl-h{font-size:clamp(22px,2.4vw,28px);font-weight:800;margin:72px 0 22px}
+.offer h3{margin-bottom:6px}
+.why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.why-grid > div{display:grid;gap:10px;align-content:start;padding-top:22px;border-top:1px solid var(--line)}
+.why-n{font:800 clamp(30px,3.2vw,42px)/1 var(--f-display);color:var(--sun-t);letter-spacing:-.02em}
+.why-grid h3{font-size:21px;font-weight:700}
+.why-grid p{color:var(--muted)}
+.wall{background:var(--paper);border-block:1px solid var(--line)}
+.mapposter::before,.poster::before{display:none}
+.mapposter,.poster{box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.strip-bar{background:rgba(241,245,249,.08)}
+.strip-bar .you-band{background:#F2F4EC}
+.strip-bar .team-band{background:var(--sun)}
+.cityhead{border-top-color:var(--line)}
+.chip{color:var(--fg);border-color:var(--line)}
+.chip:hover{border-color:var(--muted)}
+.follow .btn{white-space:nowrap}
+
+/* motion: one easing, reveal once, short hero choreography */
+.btn .arr{display:inline-block;transition:transform .2s var(--eo)}
+.btn:hover .arr{transform:translateX(3px)}
+.btn:active{transform:scale(.97)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes word{from{opacity:0;transform:translateY(.45em);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.js .hero .loc{animation:rise .6s var(--eo) .05s both}
+.js .h1v .w{animation:word .7s var(--eo) calc(180ms + var(--i) * 60ms) both}
+.js .rot{animation:rise .7s var(--eo) .62s both}
+.js .hero .lede{animation:rise .6s var(--eo) .55s both}
+.js .clocks{animation:rise .6s var(--eo) .68s both}
+.js .hero-trust{animation:rise .7s var(--eo) .8s both}
+.js .hero .calc{animation:rise 1s var(--eo) .15s both}
+.js [data-rv]{opacity:0;transform:translateY(18px);transition:opacity .7s var(--eo) var(--d,0ms), transform .7s var(--eo) var(--d,0ms)}
+.js [data-rv].in{opacity:1;transform:none}
+.at-pin::before{transition:inset .25s ease, background-color .25s ease, transform .48s var(--pop) calc(var(--i,0) * 40ms)}
+.js .atlas:not(.in) .at-pin::before{transform:scale(0)}
+.js .posters .poster{transition:transform .8s var(--eo)}
+.js .posters:not(.in) .poster{transform:rotate(0deg) translateY(28px)}
+@media (prefers-reduced-motion: reduce){
+  .js [data-rv]{opacity:1;transform:none}
+  .js .atlas .at-pin::before{transform:none}
+}
+
+.steps{grid-template-columns:repeat(4,minmax(0,1fr))}
+.rot-w{visibility:hidden;transition:transform .45s var(--eo), opacity .45s var(--eo), visibility 0s .45s}
+.rot-w.on{visibility:visible;transition-delay:.22s,.22s,0s}
+.rot-w.off{visibility:visible;transition-duration:.2s,.2s,0s}
+
+
+/* v17 */
+.loc-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px}
+.loc{border-color:rgba(212,250,90,.35)}
+.loc-me{background:none;border:0;padding:8px 2px;min-height:40px;color:var(--muted);font:600 14px/1 var(--f-body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.loc-me:hover{color:var(--fg)}
+.loc-note{font-size:13.5px;color:var(--muted);margin-top:8px;min-height:0}
+.loc-note:empty{display:none}
+.calc .bar .la,.calc .people .p .fill svg{background:#6E8C00;fill:#6E8C00}
+.calc .people .p .fill svg{background:none}
+.calc input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(90deg,#6E8C00 var(--p,0%),#E6E9DE var(--p,0%))}
+.calc input[type=range]::-moz-range-progress{background:#6E8C00}
+.calc input[type=range]::-webkit-slider-thumb{border-color:#6E8C00}
+.calc input[type=range]::-moz-range-thumb{border-color:#6E8C00}
+.calc .roles button[aria-pressed="true"]{background:#C6F432;border-color:#9DC21E;color:#0B0C0A}
+.calc-k,.calc .loss strong,.calc .equiv b{color:#4D6600}
+.calc-k::before{background:#6E8C00}
+.hero{background:linear-gradient(155deg, #1A1F10 0%, #0F110C 45%, var(--ink) 100%)}
+.calc .sub,.calc .opt-l,.calc .bar-top,.calc .loss .l,.calc .go p,.calc .how summary,.calc .how .fine,.calc .how a{color:#55594C}
+.calc .bar .us{background:#B9BDAF}
+.calc .roles button,.calc .per button,.calc .cityselect{border-color:#D9DCD0}
+
+/* how */
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-bottom:34px;list-style:none;padding:0}
+.flow li{display:flex;align-items:center;gap:12px;font-family:var(--f-display);font-weight:700;font-size:clamp(18px,2vw,22px)}
+.flow li span{padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:var(--ink-2)}
+.flow li:not(:last-child)::after{content:"\2192";font-family:var(--f-mono);color:var(--sun);font-weight:400}
+.how-text{font-size:20px;max-width:62ch;color:var(--fg)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:64px}
+.pair article{border:1px solid var(--line);border-radius:var(--r);padding:32px;display:grid;gap:12px;align-content:start}
+.pair h3{font-size:28px;font-weight:800}
+.pair p{color:var(--muted)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font:600 19px/1.35 var(--f-body)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-mono);color:var(--sun);font-size:20px;line-height:1;transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding-bottom:22px;max-width:60ch}
+
+/* footer */
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;padding-block:34px;color:var(--muted);font-size:15px}
+footer nav{display:flex;flex-wrap:wrap;gap:22px}
+footer nav a{text-decoration:none}
+footer nav a:hover{color:var(--fg)}
+
+/* responsive */
+@media (max-width: 980px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"top" "calc" "trust";grid-template-rows:none;row-gap:32px;padding-block:48px 72px}
+  .offers{grid-template-columns:1fr}
+  .start{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}
+  .steps li:nth-child(2)::after{display:none}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:28px}
+  .steps li::after{display:none}
+  .guar{grid-template-columns:minmax(0,1fr);gap:22px;margin-top:44px}
+  .quote .wrap{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:80px}
+  .atlas{grid-template-columns:minmax(0,1fr);gap:56px}
+  .mapposter{max-width:540px;width:calc(100% - 40px);justify-self:center}
+  .posters{gap:24px}
+  .pair,.faq{grid-template-columns:1fr}
+  .faq{gap:28px}
+}
+@media (max-width: 760px){
+  .nav ul{display:none}
+  .sec{padding-block:76px}
+  body{font-size:16px}
+  .lede{font-size:17px}
+  .calc{padding:20px}
+  .opt.two{grid-template-columns:minmax(0,1fr)}
+  .clocks{gap:10px}
+  .clk b{font-size:24px}
+  .clk span{font-size:12.5px}
+  .flight{min-width:40px}
+  .hero h1{font-size:clamp(36px,10vw,44px)}
+  .hero .lede{font-size:16.5px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li{padding-right:0}
+  .steps li::after{display:none}
+  .qform{grid-template-columns:minmax(0,1fr);padding:20px}
+  .why-grid{grid-template-columns:minmax(0,1fr);gap:4px}
+  .gl-h{margin-top:56px}
+  .nav .btn{padding:10px 14px;font-size:14px}
+  .atlas{margin-top:32px;gap:40px}
+  .mapposter{transform:none;width:100%;max-width:none}
+  .citychips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-20px;margin-right:-20px;padding:2px 20px 6px}
+  .citychips::-webkit-scrollbar{display:none}
+  .at-label{font-size:14px}
+  .strip-row{grid-template-columns:78px minmax(0,1fr)}
+  .strip-axis{margin-left:90px}
+  .posters{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin:56px -20px 0;padding:22px 20px 26px;scrollbar-width:none}
+  .posters::-webkit-scrollbar{display:none}
+  .poster{scroll-snap-align:center}
+  .wall-close{margin-top:28px}
+  .exit-card{padding:28px 20px 18px}
+  .exit-next li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .exit-form .btn{flex:1 1 100%}
+  .follow{border-radius:16px;padding:8px 8px 8px 16px;gap:8px}
+  .follow p{font-size:13.5px;line-height:1.35}
+  .follow .fl-long{display:none}
+  .follow .btn{padding:11px 14px;font-size:14px}
+  .gl{padding:20px 14px 0}
+  .gl-track button{font-size:12px;padding:0 0 16px}
+  .gl-track button i{width:28px;height:28px;font-size:12px}
+  .gl-track::before,.gl-fill{top:13px}
+  .gl-panel{grid-template-columns:minmax(0,1fr);gap:16px;padding:20px 2px 22px}
+  .gl-timer{margin:0 -14px}
+  .hero .wrap{grid-template-areas:"top" "calc" "trust";grid-template-rows:none;row-gap:32px;padding-block:40px 64px}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add("js")</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Vayra home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="23.5" cy="8.5" r="4" fill="#C6F432"/><path d="M4 7 L13 25 L21 12" fill="none" stroke="#F5F6F2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Vayra
+    </a>
+    <ul>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#calc">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-sun" href="#quote">Get my rates</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="loc-row">
+        <label class="loc">
+          <svg class="pin" viewBox="0 0 16 20" aria-hidden="true"><path d="M8 0C3.6 0 0 3.5 0 7.8 0 13.6 8 20 8 20s8-6.4 8-12.2C16 3.5 12.4 0 8 0zm0 10.6a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z" fill="currentColor"/></svg><span id="h-city">Pick your US city</span><svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <select class="h-select" id="metro0" data-metro aria-label="Your city in the US"><option value="us" selected>Pick your US city</option><optgroup label="West Coast"><option value="sf">San Francisco, CA</option><option value="sj">San Jose, CA</option><option value="sea">Seattle, WA</option><option value="la">Los Angeles, CA</option></optgroup><optgroup label="Mountain"><option value="den">Denver, CO</option></optgroup><optgroup label="Central"><option value="aus">Austin, TX</option><option value="dal">Dallas, TX</option><option value="chi">Chicago, IL</option></optgroup><optgroup label="East Coast"><option value="atl">Atlanta, GA</option><option value="mia">Miami, FL</option><option value="dc">Washington, DC, DC</option><option value="ny">New York, NY</option><option value="bos">Boston, MA</option></optgroup></select>
+        </label>
+          <button class="loc-me" id="loc-me" type="button" hidden>Use my location</button>
+        </div>
+        <p class="loc-note" id="loc-note" aria-live="polite"></p>
+        <h1 id="hero-title"><span class="sr">Senior AI-native teams on your clock: AI engineers, GTM engineers, SDRs, developers and data engineers from Latin America.</span><span class="h1v" aria-hidden="true"><span class="w" style="--i:0">Senior</span> <span class="w" style="--i:1">AI-native</span> <span class="w" style="--i:2">teams,</span> <span class="w" style="--i:3"><em>on</em></span> <span class="w" style="--i:4"><em>your</em></span> <span class="w" style="--i:5"><em>clock.</em></span></span><span class="rot" aria-hidden="true"><span class="rot-w">AI engineers.</span><span class="rot-w">GTM engineers.</span><span class="rot-w">SDRs.</span><span class="rot-w">Developers.</span><span class="rot-w">Data engineers.</span></span></h1>
+        <p class="lede">From Latin America, working your hours and using AI every day. <b>Interview for free. Pay only when you hire.</b></p>
+        <div class="clocks">
+          <div class="clk"><b id="ck-you">&nbsp;</b><span id="ck-you-l">US Eastern Time</span></div>
+          <div class="flight" aria-hidden="true"><i></i><svg class="plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" fill="currentColor" transform="rotate(90 12 12)"/></svg><i></i></div>
+          <div class="clk" id="ck-swap"><b id="ck-team">&nbsp;</b><span id="ck-team-l">Buenos Aires, AR</span></div>
+        </div>
+      </div>
+
+      <div class="calc" id="calc" aria-labelledby="calc-title">
+        <div>
+          <h2 id="calc-title">Run the numbers.</h2>
+          <p class="sub">Pick a role, a level and how many. We put a US hire, salary plus benefits, next to Vayra.</p>
+          <p class="calc-k">Takes about 20 seconds</p>
+        </div>
+        <div class="opt">
+          <span class="opt-l" id="l-role">I need a</span>
+          <div class="roles" role="group" aria-labelledby="l-role">
+            <button type="button" data-role="swe" aria-pressed="true">Software engineer</button>
+            <button type="button" data-role="gtm" aria-pressed="false">GTM engineer</button>
+            <button type="button" data-role="sdr" aria-pressed="false">SDR</button>
+          </div>
+        </div>
+        <div class="opt">
+          <span class="opt-l" id="l-level">Level</span>
+          <div class="roles" role="group" aria-labelledby="l-level">
+            <button type="button" data-level="semi" aria-pressed="false">Semi-senior</button>
+            <button type="button" data-level="senior" aria-pressed="true">Senior</button>
+            <button type="button" data-level="manager" aria-pressed="false">Manager</button>
+          </div>
+        </div>
+        <div class="opt two">
+          <div class="opt">
+            <label class="opt-l" for="metro">My team is in</label>
+            <select class="cityselect" id="metro" data-metro><option value="us" selected>Pick your US city</option><optgroup label="West Coast"><option value="sf">San Francisco, CA</option><option value="sj">San Jose, CA</option><option value="sea">Seattle, WA</option><option value="la">Los Angeles, CA</option></optgroup><optgroup label="Mountain"><option value="den">Denver, CO</option></optgroup><optgroup label="Central"><option value="aus">Austin, TX</option><option value="dal">Dallas, TX</option><option value="chi">Chicago, IL</option></optgroup><optgroup label="East Coast"><option value="atl">Atlanta, GA</option><option value="mia">Miami, FL</option><option value="dc">Washington, DC, DC</option><option value="ny">New York, NY</option><option value="bos">Boston, MA</option></optgroup></select>
+          </div>
+          <div class="opt">
+            <label class="opt-l" for="cnt-range">How many: <output id="cnt">1</output></label>
+            <input type="range" id="cnt-range" min="1" max="20" step="1" value="1">
+          </div>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="bar-row">
+            <div class="bar-top"><span id="t-us">US hire, national average, salary plus benefits</span><strong id="v-us">$0</strong></div>
+            <div class="bar"><span class="us" style="width:100%"></span></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-top"><span id="t-la">Vayra, from $70 an hour</span><strong id="v-la">$0</strong></div>
+            <div class="bar"><span class="la" id="b-la" style="width:50%"></span></div>
+          </div>
+          <div class="loss">
+            <div><span class="l" id="loss-l">You keep</span><strong id="v-gap">$0</strong><span class="l" id="loss-r">a year</span></div>
+            <div class="per" role="group" aria-label="Show cost">
+              <button type="button" data-per="year" aria-pressed="true">Year</button>
+              <button type="button" data-per="month" aria-pressed="false">Month</button>
+            </div>
+          </div>
+          <div class="equiv"><p id="eq-text">For the cost of one US hire, you get 1.8 at Vayra.</p><div class="people" id="people" aria-hidden="true"></div></div>
+        </div>
+        <div class="go">
+          <a class="btn btn-sun" id="quote-btn" href="#quote">Send me these rates <span class="arr">&rarr;</span></a>
+        </div>
+        <details class="how">
+          <summary>How we calculate this</summary>
+          <p class="fine" id="fine"></p>
+          <p class="fine">Sources: <a href="https://www.citysalarydata.com/occupations/software-developers" target="_blank" rel="noopener">BLS OEWS May 2025 metro wages for software developers, via CitySalaryData</a>, <a href="https://www.bls.gov/opub/ted/2026/compensation-costs-for-private-industry-workers-averaged-46-89-per-hour-worked-in-june-2026.htm" target="_blank" rel="noopener">BLS, employer compensation costs, June 2026</a>, <a href="https://www.hireinsouth.com/post/gtm-engineer-salary" target="_blank" rel="noopener">South, GTM engineer salaries, 2026</a>, <a href="https://stealthagents.com/research/cost-of-hiring-a-sales-development-representative-2026" target="_blank" rel="noopener">Stealth Agents, US SDR pay by level, 2026</a>, <a href="https://www.payscale.com/research/US/Job=Sales_Development_Manager/Salary" target="_blank" rel="noopener">Payscale, Sales Development Manager, Sep 2026</a>.</p>
+        </details>
+      </div>
+
+      <div class="hero-trust">
+        <div class="cta">
+          <a class="btn btn-sun" href="#quote">Get my rates <span class="arr">&rarr;</span></a>
+          <a class="btn btn-ghost" href="#calc">Run the numbers</a>
+        </div>
+        <ul class="promises">
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#ABD558"/><path d="M5.5 10.2l3 3 6-6.4" fill="none" stroke="#FFFFFF" stroke-width="2"/></svg><span>$0 to interview. You pay only when you hire.</span></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#ABD558"/><path d="M5.5 10.2l3 3 6-6.4" fill="none" stroke="#FFFFFF" stroke-width="2"/></svg><span>Rates in 24 hours. First profiles in about a week.</span></li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#ABD558"/><path d="M5.5 10.2l3 3 6-6.4" fill="none" stroke="#FFFFFF" stroke-width="2"/></svg><span>Not the right fit? We replace them for free.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper" id="how-it-works" aria-labelledby="hiw-title">
+    <div class="wrap">
+      <div class="sec-head" data-rv>
+        <h2 id="hiw-title">Here is how it goes.</h2>
+        <p class="lede">No call needed to start, and you pay nothing until you hire.</p>
+      </div>
+      <ol class="steps">
+        <li data-rv style="--d:0ms"><span class="when">Today</span><h3>Tell us who you need</h3><p>Role, level, how many and where your team is. One minute.</p></li>
+        <li data-rv style="--d:100ms"><span class="when">Within 24 hours</span><h3>Get your rates</h3><p>Monthly rates for your team, straight to your inbox.</p></li>
+        <li data-rv style="--d:200ms"><span class="when">In about a week</span><h3>Meet your shortlist</h3><p>Senior profiles vetted for your role. Interviews are free.</p></li>
+        <li data-rv style="--d:300ms"><span class="when">When you say yes</span><h3>Start working</h3><p>We sign the contracts and handle payments. Not the right fit? We replace them for free.</p></li>
+      </ol>
+      <a class="btn btn-sun hiw-go" href="#quote" data-rv>Start today <span class="arr">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section class="sec" id="what" aria-labelledby="what-title">
+    <div class="wrap">
+      <div class="sec-head" data-rv>
+        <h2 id="what-title">Who you can hire.</h2>
+        <p class="lede">Senior and AI-native. They join your Slack, your standups and your tools from day one.</p>
+      </div>
+      <div class="offers">
+        <article class="offer lead" data-rv style="--d:0ms"><h3>GTM engineers and SDRs</h3><ul class="chips"><li>Outbound</li><li>Enrichment</li><li>CRM</li><li>RevOps</li><li>SDRs</li></ul></article>
+        <article class="offer" data-rv style="--d:120ms"><h3>Developers</h3><ul class="chips"><li>Full-stack</li><li>Mobile</li><li>Data</li><li>Cloud &amp; DevOps</li></ul></article>
+        <article class="offer" data-rv style="--d:240ms"><h3>AI engineers</h3><ul class="chips"><li>LLMs &amp; RAG</li><li>MLOps</li><li>Python</li><li>Evals</li></ul></article>
+      </div>
+      <h3 class="gl-h" data-rv>How a Vayra GTM team runs your pipeline.</h3>
+      <div class="gl" id="gl">
+        <div class="gl-track" role="tablist" aria-label="GTM stages">
+          <span class="gl-fill" aria-hidden="true"></span>
+          <button type="button" role="tab" id="gt-0" aria-controls="gl-panel" aria-selected="true" tabindex="0" data-st="0"><i aria-hidden="true">1</i><span>Signals</span></button>
+          <button type="button" role="tab" id="gt-1" aria-controls="gl-panel" aria-selected="false" tabindex="-1" data-st="1"><i aria-hidden="true">2</i><span>Research</span></button>
+          <button type="button" role="tab" id="gt-2" aria-controls="gl-panel" aria-selected="false" tabindex="-1" data-st="2"><i aria-hidden="true">3</i><span>Outreach</span></button>
+          <button type="button" role="tab" id="gt-3" aria-controls="gl-panel" aria-selected="false" tabindex="-1" data-st="3"><i aria-hidden="true">4</i><span>Calls</span></button>
+          <button type="button" role="tab" id="gt-4" aria-controls="gl-panel" aria-selected="false" tabindex="-1" data-st="4"><i aria-hidden="true">5</i><span>Pipeline</span></button>
+        </div>
+        <div class="gl-panel" id="gl-panel" role="tabpanel" aria-labelledby="gt-0">
+          <div><span class="gl-k">Who</span><b id="gl-who">GTM engineer</b></div>
+          <div><span class="gl-k">With AI</span><p id="gl-ai">Scans hiring, funding and product news across your market with AI.</p></div>
+          <div><span class="gl-k">The person decides</span><p id="gl-dec">Picks the signals worth acting on.</p></div>
+        </div>
+        <div class="gl-timer" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <div class="sec-head" style="margin-bottom:0" data-rv>
+        <h2 id="faq-title">Straight answers.</h2>
+        <p class="lede">Or write to <a href="mailto:hello@vayra.team">hello@vayra.team</a>.</p>
+      </div>
+      <div data-rv>
+        <details open>
+          <summary>When do I pay?</summary>
+          <p>Interviews are free. You pay only when you decide to hire someone.</p>
+        </details>
+        <details>
+          <summary>How much does a Vayra team cost?</summary>
+          <p>Rates start at about $50 an hour for a semi-senior software or GTM engineer and $3,000 a month for an SDR. Senior and manager levels cost more. Send the form and you get your rates within 24 hours.</p>
+        </details>
+        <details>
+          <summary>What if a hire does not work out?</summary>
+          <p>We replace them at no cost.</p>
+        </details>
+        <details>
+          <summary>Can I start with one person?</summary>
+          <p>Yes. Start with one person and grow from there.</p>
+        </details>
+        <details>
+          <summary>What does AI-native mean?</summary>
+          <p>AI is part of how they work every day: writing and reviewing code, research, enrichment and first drafts. They also know when to stop and check the output.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote" aria-labelledby="quote-title">
+    <div class="wrap">
+      <div data-rv>
+        <h2 id="quote-title">Get your rates in 24 hours.</h2>
+        <p class="lede">Tell us who you need. We reply with monthly rates, then profiles to interview in about a week.</p>
+        <p class="q-alt">Prefer email? Write to <a href="mailto:hello@vayra.team">hello@vayra.team</a>.</p>
+      </div>
+      <!-- QUOTE FORM: set data-endpoint to your form backend (HubSpot, Formspree or your own). While it is empty, sending opens an email to hello@vayra.team with the answers. -->
+      <form class="qform" id="qform" data-rv data-endpoint="" novalidate>
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
+        <div class="field full"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required><span class="err" id="e-company"></span></div>
+        <div class="need">
+          <div class="field"><label for="f-role">Role</label><select id="f-role" name="role"><option>Software engineer</option><option>GTM engineer</option><option>SDR</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="f-level">Level</label><select id="f-level" name="level"><option>Semi-senior</option><option selected>Senior</option><option>Manager</option></select></div>
+          <div class="field"><label for="f-count">People</label><input id="f-count" name="team_size" type="number" min="1" max="50" value="1"></div>
+          <div class="field"><label for="f-metro">Team in</label><select id="f-metro" name="city"><option value="us" selected>Not set yet</option><optgroup label="West Coast"><option value="sf">San Francisco, CA</option><option value="sj">San Jose, CA</option><option value="sea">Seattle, WA</option><option value="la">Los Angeles, CA</option></optgroup><optgroup label="Mountain"><option value="den">Denver, CO</option></optgroup><optgroup label="Central"><option value="aus">Austin, TX</option><option value="dal">Dallas, TX</option><option value="chi">Chicago, IL</option></optgroup><optgroup label="East Coast"><option value="atl">Atlanta, GA</option><option value="mia">Miami, FL</option><option value="dc">Washington, DC, DC</option><option value="ny">New York, NY</option><option value="bos">Boston, MA</option></optgroup><option value="other">Other US city</option></select></div>
+        </div>
+        <div class="field full"><label for="f-msg">Anything we should know? (optional)</label><textarea id="f-msg" name="message" placeholder="The product, the stack or the pipeline, in a few lines."></textarea></div>
+        <div class="send full">
+          <button class="btn btn-sun" type="submit">Send me my rates <span class="arr">&rarr;</span></button>
+          <p>Free to interview. You pay only when you hire.</p>
+        </div>
+        <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Vayra home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="23.5" cy="8.5" r="4" fill="#C6F432"/><path d="M4 7 L13 25 L21 12" fill="none" stroke="#F5F6F2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Vayra
+    </a>
+    <span>AI-native teams from Latin America, on your clock.</span>
+    <span>&copy; 2026 Vayra</span>
+  </div>
+</footer>
+
+<div class="exit" id="exit" role="dialog" aria-modal="true" aria-labelledby="exit-title" hidden>
+  <div class="exit-card">
+    <button class="exit-x" id="exit-close" type="button" aria-label="Close">&times;</button>
+    <div id="exit-a">
+      <p class="exit-k" id="exit-sum">1 software engineer, senior level, for a team in New York.</p>
+      <h2 id="exit-title">Before you go, keep your numbers.</h2>
+      <p class="exit-big"><strong id="exit-gap">$0</strong><span>a year you keep</span></p>
+      <ul class="exit-next">
+        <li><b>Now</b><span>Leave your work email. That is all we need.</span></li>
+        <li><b>Within 24 hours</b><span>Your real monthly rates for this team.</span></li>
+        <li><b>In about a week</b><span>Profiles to interview, free. You pay only when you hire.</span></li>
+      </ul>
+      <form class="exit-form" id="exit-form" novalidate>
+        <label class="sr" for="x-email">Work email</label>
+        <input id="x-email" type="email" autocomplete="email" placeholder="you@company.com" required>
+        <button class="btn btn-sun shine" type="submit">Send me my rates</button>
+      </form>
+      <p class="exit-err" id="exit-err" role="alert"></p>
+      <button class="exit-later" id="exit-later" type="button">Not now</button>
+    </div>
+    <div id="exit-b" hidden>
+      <h2>Your rates are on the way.</h2>
+      <p>For <b id="exit-to"></b>. <span id="exit-b-note">We reply within 24 hours.</span></p>
+      <p>Want profiles that fit even better? Add your company and a line about the work.</p>
+      <div class="exit-actions">
+        <a class="btn btn-sun" id="exit-more" href="#quote">Add details</a>
+        <button class="exit-later" id="exit-done" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="follow" id="follow" role="region" aria-label="Your numbers">
+  <p><b id="follow-gap">$0 a year</b> you keep <span class="fl-long" id="follow-who"></span></p>
+  <a class="btn btn-sun" id="follow-go" href="#quote">Get my rates</a>
+  <button class="follow-x" id="follow-x" type="button" aria-label="Hide">&times;</button>
+</div>
+<script>
+(function(){
+  var METROS = [{"id": "us", "city": "the US", "st": "", "region": "", "tz": "America/New_York", "swe": 135980}, {"id": "sf", "city": "San Francisco", "region": "West Coast", "tz": "America/Los_Angeles", "lat": 37.77, "lon": -122.42, "swe": 186640, "st": "CA"}, {"id": "sj", "city": "San Jose", "region": "West Coast", "tz": "America/Los_Angeles", "lat": 37.34, "lon": -121.89, "swe": 213110, "st": "CA"}, {"id": "sea", "city": "Seattle", "region": "West Coast", "tz": "America/Los_Angeles", "lat": 47.61, "lon": -122.33, "swe": 167280, "st": "WA"}, {"id": "la", "city": "Los Angeles", "region": "West Coast", "tz": "America/Los_Angeles", "lat": 34.05, "lon": -118.24, "swe": 160920, "st": "CA"}, {"id": "den", "city": "Denver", "region": "Mountain", "tz": "America/Denver", "lat": 39.74, "lon": -104.99, "swe": 137610, "st": "CO"}, {"id": "aus", "city": "Austin", "region": "Central", "tz": "America/Chicago", "lat": 30.27, "lon": -97.74, "swe": 134120, "st": "TX"}, {"id": "dal", "city": "Dallas", "region": "Central", "tz": "America/Chicago", "lat": 32.78, "lon": -96.8, "swe": 133290, "st": "TX"}, {"id": "chi", "city": "Chicago", "region": "Central", "tz": "America/Chicago", "lat": 41.88, "lon": -87.63, "swe": 134380, "st": "IL"}, {"id": "atl", "city": "Atlanta", "region": "East Coast", "tz": "America/New_York", "lat": 33.75, "lon": -84.39, "swe": 132960, "st": "GA"}, {"id": "mia", "city": "Miami", "region": "East Coast", "tz": "America/New_York", "lat": 25.76, "lon": -80.19, "swe": 132650, "st": "FL"}, {"id": "dc", "city": "Washington, DC", "region": "East Coast", "tz": "America/New_York", "lat": 38.91, "lon": -77.04, "swe": 154930, "st": "DC"}, {"id": "ny", "city": "New York", "region": "East Coast", "tz": "America/New_York", "lat": 40.71, "lon": -74.01, "swe": 166830, "st": "NY"}, {"id": "bos", "city": "Boston", "region": "East Coast", "tz": "America/New_York", "lat": 42.36, "lon": -71.06, "swe": 166090, "st": "MA"}];
+  var $ = function(id){ return document.getElementById(id); };
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+  var byMetro = {}; METROS.forEach(function(k){ byMetro[k.id] = k; });
+  var metro = byMetro.us, located = '', helloCity = '', helloSt = '';
+  function placeName(){ if (metro.id === 'us') return ''; return (located === 'ip' && helloCity ? helloCity : metro.city) + ', ' + ((located === 'ip' && helloSt) || metro.st); }
+  var known = function(){ return metro.id !== 'us'; };
+
+  // ---------- time helpers
+  function offsetMin(tz){
+    try {
+      var p = new Intl.DateTimeFormat('en-US',{timeZone:tz,timeZoneName:'shortOffset'}).formatToParts(new Date());
+      var n = (p.find(function(x){return x.type==='timeZoneName';})||{}).value || 'GMT';
+      var mm = n.match(/GMT([+-])(\d{1,2})(?::(\d{2}))?/); if (!mm) return 0;
+      var v = parseInt(mm[2],10)*60 + (mm[3]?parseInt(mm[3],10):0); return mm[1] === '-' ? -v : v;
+    } catch(e) { return 0; }
+  }
+  function timeIn(tz){ try { return new Intl.DateTimeFormat('en-US',{timeZone:tz,hour:'numeric',minute:'2-digit'}).format(new Date()); } catch(e){ return ''; } }
+  function shared(tz){
+    var d = (offsetMin(tz) - offsetMin(metro.tz)) / 60;
+    return {d: d, h: Math.max(0, Math.min(18, 18 - d) - Math.max(9, 9 - d))};
+  }
+
+  // ---------- where is the visitor (time zone first, then IP on the hosted site)
+  try {
+    var vtz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var tzMap = {'America/Los_Angeles':'sf','America/Vancouver':'sea','America/Phoenix':'den','America/Denver':'den','America/Boise':'den','America/Chicago':'chi','America/New_York':'ny','America/Detroit':'ny','America/Indiana/Indianapolis':'chi','America/Kentucky/Louisville':'atl'};
+    var TZL = {'America/Los_Angeles':'US Pacific Time','America/Vancouver':'US Pacific Time','America/Phoenix':'Arizona Time','America/Denver':'US Mountain Time','America/Boise':'US Mountain Time','America/Chicago':'US Central Time','America/Indiana/Indianapolis':'US Eastern Time','America/New_York':'US Eastern Time','America/Detroit':'US Eastern Time','America/Kentucky/Louisville':'US Eastern Time','America/Anchorage':'Alaska Time','Pacific/Honolulu':'Hawaii Time'};
+    if (TZL[vtz]) { metro = Object.assign({}, byMetro.us, {tz: vtz, zoneLabel: TZL[vtz]}); located = 'tz'; }
+  } catch(e) {}
+
+  // ---------- calculator
+  var HOURS = 160, BENEFITS = 0.30;
+  var LEVELS = {semi:'Semi-senior', senior:'Senior', manager:'Manager'};
+  var ROLE_NAMES = {swe:'software engineer', gtm:'GTM engineer', sdr:'SDR'};
+  var FORM_ROLE = {swe:'Software engineer', gtm:'GTM engineer', sdr:'SDR'};
+  var RATES = {
+    swe: {semi:{h:50}, senior:{h:70}, manager:{h:90}},
+    gtm: {semi:{h:50}, senior:{h:65}, manager:{h:85}},
+    sdr: {semi:{m:3000}, senior:{m:4000}, manager:{m:5000}}
+  };
+  var SWE_SCALE = {semi:1, senior:171980/135980, manager:214670/135980};
+  var GTM_US = {semi:140000, senior:170000, manager:190000};
+  var SDR_US = {semi:60000, senior:70000, manager:71598};
+  var NOTES = {
+    swe: 'US: median pay for software developers in your metro (BLS OEWS, May 2025). Senior and manager scale the median by the national 75th and 90th percentile.',
+    gtm: 'US: national GTM engineer salaries, midpoints of $120K to $160K for semi-senior, $150K to $190K for senior and $170K to $210K for lead (South, 2026). There is no metro data for this role yet.',
+    sdr: 'US: national SDR base salaries, $60,000 mid-level and $70,000 senior (Stealth Agents, 2026), and $71,598 for an SDR manager (Payscale, Sep 2026). Commissions are extra.'
+  };
+  var role = 'swe', level = 'senior', count = 1, per = 'year', gapYear = 0;
+  var fmt = function(n){ return '$' + Math.round(n).toLocaleString('en-US'); };
+  var shown = {};
+  function tween(id, to){
+    var el = $(id), from = shown[id] || 0; shown[id] = to;
+    if (reduce || !window.requestAnimationFrame) { el.textContent = fmt(to); return; }
+    var t0 = null;
+    function step(t){ if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 900), e = k === 1 ? 1 : 1 - Math.pow(2, -10 * k); el.textContent = fmt(from + (to - from) * e); if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var PERSON = '<svg viewBox="0 0 22 30"><circle cx="11" cy="6.5" r="5.5"/><path d="M0 30v-5.5C0 18.5 4.9 15 11 15s11 3.5 11 9.5V30z"/></svg>';
+  function people(ratio){
+    var html = '<span class="p us">' + PERSON + '</span><span class="eq">=</span>', full = Math.floor(ratio), frac = ratio - full;
+    for (var i = 0; i < full && i < 8; i++) html += '<span class="p" style="animation-delay:' + (i * 70) + 'ms"><span class="fill">' + PERSON + '</span></span>';
+    if (frac > 0.05 && full < 8) html += '<span class="p" style="animation-delay:' + (full * 70) + 'ms"><span class="ghost">' + PERSON + '</span><span class="fill" style="--w:' + Math.round(frac * 100) + '%">' + PERSON + '</span></span>';
+    $('people').innerHTML = html;
+  }
+  function usSalary(){ return role === 'swe' ? metro.swe * SWE_SCALE[level] : (role === 'gtm' ? GTM_US[level] : SDR_US[level]); }
+  function vayraYear(){ var r = RATES[role][level]; return r.h ? r.h * HOURS * 12 : r.m * 12; }
+  function plural(n, word){ return n + ' ' + word + (n > 1 ? 's' : ''); }
+  function selectionText(){ return plural(count, ROLE_NAMES[role]) + ', ' + LEVELS[level].toLowerCase() + ' level'; }
+  function renderCalc(){
+    var div = per === 'month' ? 12 : 1, usOne = usSalary() / (1 - BENEFITS), laOne = vayraYear();
+    var us = usOne * count / div, la = laOne * count / div, ratio = usOne / laOne, r = RATES[role][level];
+    $('t-us').textContent = (count > 1 ? count + ' US hires' : 'US hire') + (role === 'swe' && known() ? ' in ' + metro.city : ', national average') + ', salary plus benefits';
+    $('t-la').textContent = (count > 1 ? count + ' with Vayra' : 'With Vayra') + ', from ' + (r.h ? '$' + r.h + ' an hour' : fmt(r.m) + ' a month');
+    tween('v-us', us); tween('v-la', la); tween('v-gap', Math.max(0, us - la));
+    gapYear = Math.max(0, usOne - laOne) * count;
+    var fg = $('follow-gap'); if (fg) { fg.textContent = fmt(gapYear) + ' a year'; $('follow-who').textContent = 'with ' + selectionText().replace(/, (\w[\w-]*) level/, ' ($1)') + (known() ? ' in ' + metro.city : ' in the US') + '.'; }
+    $('b-la').style.width = Math.min(100, la / us * 100).toFixed(1) + '%';
+    $('loss-l').textContent = 'You keep';
+    $('loss-r').textContent = 'a ' + per;
+    var lv = level === 'manager' ? 'manager-level' : LEVELS[level].toLowerCase();
+    $('eq-text').innerHTML = 'One ' + lv + ' US ' + ROLE_NAMES[role] + (role === 'swe' && known() ? ' in ' + metro.city : '') + ' costs as much as <b>' + (Math.round(ratio * 10) / 10) + '</b> at Vayra.';
+    people(ratio);
+    var rg = $('cnt-range'); rg.value = count; rg.style.setProperty('--p', ((count - 1) / 19 * 100) + '%'); $('cnt').textContent = count;
+    $('fine').textContent = NOTES[role] + ' Benefits add 30% of compensation costs in private industry (BLS, June 2026). Vayra uses starting rates for a full-time month of ' + HOURS + ' hours. Your quote can be higher for niche skills.';
+    document.querySelectorAll('[data-role]').forEach(function(el){ el.setAttribute('aria-pressed', el.getAttribute('data-role') === role ? 'true' : 'false'); });
+    document.querySelectorAll('[data-level]').forEach(function(el){ el.setAttribute('aria-pressed', el.getAttribute('data-level') === level ? 'true' : 'false'); });
+    document.querySelectorAll('[data-per]').forEach(function(el){ el.setAttribute('aria-pressed', el.getAttribute('data-per') === per ? 'true' : 'false'); });
+    syncForm();
+  }
+  document.querySelectorAll('[data-role]').forEach(function(el){ el.addEventListener('click', function(){ role = el.getAttribute('data-role'); renderCalc(); }); });
+  document.querySelectorAll('[data-level]').forEach(function(el){ el.addEventListener('click', function(){ level = el.getAttribute('data-level'); renderCalc(); }); });
+  document.querySelectorAll('[data-per]').forEach(function(el){ el.addEventListener('click', function(){ per = el.getAttribute('data-per'); renderCalc(); }); });
+  $('cnt-range').addEventListener('input', function(e){ count = parseInt(e.target.value, 10) || 1; renderCalc(); });
+  document.querySelectorAll('select[data-metro]').forEach(function(sel){
+    sel.addEventListener('change', function(){ metro = byMetro[sel.value] || metro; located = 'pick'; renderAll(); });
+  });
+  $('quote-btn').addEventListener('click', function(){ formTouched = {}; syncForm(true); });
+
+  // ---------- local clock helpers
+  function hm(tz){
+    try {
+      var p = new Intl.DateTimeFormat('en-US',{timeZone:tz,hour:'numeric',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+      var h = 0, m = 0; p.forEach(function(x){ if (x.type === 'hour') h = parseInt(x.value,10) % 24; if (x.type === 'minute') m = parseInt(x.value,10); });
+      return {h:h, m:m, f:h + m/60};
+    } catch(e) { return {h:12, m:0, f:12}; }
+  }
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  var DRINK = {AR:'sharing a mate', UY:'sharing a mate', PY:'having a tereré', BR:'having a cafezinho', CO:'having a tinto'};
+  function activity(h, cc){
+    if (h < 6) return 'off for the night';
+    if (h < 9) return 'having breakfast';
+    if (h < 12) return (cc && DRINK[cc]) || 'grabbing a coffee';
+    if (h < 14) return 'having lunch';
+    if (h < 17) return 'deep in the afternoon';
+    if (h < 20) return 'wrapping up the day';
+    return 'off for the night';
+  }
+
+  // ---------- the map poster: your city, your team's city, the shared workday
+  var CITIES = [{"id": "mendoza", "name": "Mendoza", "cc": "AR", "lat": -32.89, "lon": -68.84, "tz": "America/Argentina/Mendoza", "x": 61.56, "y": 73.26, "px": 369.4, "py": 586, "line": "Vineyards at the foot of the Andes.", "country": "Argentina"}, {"id": "buenos-aires", "name": "Buenos Aires", "cc": "AR", "lat": -34.6, "lon": -58.38, "tz": "America/Argentina/Buenos_Aires", "x": 72.4, "y": 74.85, "px": 434.4, "py": 598.8, "line": "Wide avenues, jacarandas and late dinners.", "country": "Argentina"}, {"id": "cordoba", "name": "Córdoba", "cc": "AR", "lat": -31.42, "lon": -64.18, "tz": "America/Argentina/Cordoba", "x": 66.39, "y": 71.91, "px": 398.4, "py": 575.2, "line": "A university city in the middle of Argentina.", "country": "Argentina"}, {"id": "rosario", "name": "Rosario", "cc": "AR", "lat": -32.95, "lon": -60.64, "tz": "America/Argentina/Cordoba", "x": 70.06, "y": 73.31, "px": 420.4, "py": 586.5, "line": "A river city on the Paraná.", "country": "Argentina"}, {"id": "montevideo", "name": "Montevideo", "cc": "UY", "lat": -34.9, "lon": -56.16, "tz": "America/Montevideo", "x": 74.7, "y": 75.14, "px": 448.2, "py": 601.1, "line": "A calm capital on the Río de la Plata.", "country": "Uruguay"}, {"id": "asuncion", "name": "Asunción", "cc": "PY", "lat": -25.26, "lon": -57.58, "tz": "America/Asuncion", "x": 73.23, "y": 66.46, "px": 439.4, "py": 531.7, "line": "Paraguay’s capital, on the river bay.", "country": "Paraguay"}, {"id": "santiago", "name": "Santiago", "cc": "CL", "lat": -33.45, "lon": -70.67, "tz": "America/Santiago", "x": 59.67, "y": 73.78, "px": 358, "py": 590.2, "line": "The Andes right out the window.", "country": "Chile"}, {"id": "lima", "name": "Lima", "cc": "PE", "lat": -12.05, "lon": -77.04, "tz": "America/Lima", "x": 53.07, "y": 55.6, "px": 318.4, "py": 444.8, "line": "Pacific cliffs and great food.", "country": "Peru"}, {"id": "bogota", "name": "Bogotá", "cc": "CO", "lat": 4.71, "lon": -74.07, "tz": "America/Bogota", "x": 56.14, "y": 42.5, "px": 336.9, "py": 340, "line": "A high city, 2,600 meters up in the Andes.", "country": "Colombia"}, {"id": "medellin", "name": "Medellín", "cc": "CO", "lat": 6.24, "lon": -75.58, "tz": "America/Bogota", "x": 54.58, "y": 41.3, "px": 327.5, "py": 330.4, "line": "The city of eternal spring.", "country": "Colombia"}, {"id": "cdmx", "name": "Mexico City", "cc": "MX", "lat": 19.43, "lon": -99.13, "tz": "America/Mexico_City", "x": 30.18, "y": 30.76, "px": 181.1, "py": 246.1, "line": "One of the biggest cities in the Americas.", "country": "Mexico"}, {"id": "guadalajara", "name": "Guadalajara", "cc": "MX", "lat": 20.66, "lon": -103.35, "tz": "America/Mexico_City", "x": 25.8, "y": 29.75, "px": 154.8, "py": 238, "line": "Western Mexico’s biggest city.", "country": "Mexico"}, {"id": "sao-paulo", "name": "São Paulo", "cc": "BR", "lat": -23.55, "lon": -46.63, "tz": "America/Sao_Paulo", "x": 84.58, "y": 65, "px": 507.5, "py": 520, "line": "The biggest city in South America.", "country": "Brazil"}, {"id": "rio", "name": "Rio", "cc": "BR", "lat": -22.91, "lon": -43.17, "tz": "America/Sao_Paulo", "x": 88.16, "y": 64.46, "px": 529, "py": 515.7, "line": "Mountains, beaches and the sea.", "country": "Brazil"}, {"id": "florianopolis", "name": "Florianópolis", "cc": "BR", "lat": -27.6, "lon": -48.55, "tz": "America/Sao_Paulo", "x": 82.59, "y": 68.49, "px": 495.5, "py": 547.9, "line": "An island city full of beaches.", "country": "Brazil"}], MAPPOS = {"sf": {"x": 6.04, "y": 14.42, "px": 36.3, "py": 115.3}, "sj": {"x": 6.59, "y": 14.84, "px": 39.6, "py": 118.7}, "sea": {"x": 6.14, "y": 3.98, "px": 36.8, "py": 31.8}, "la": {"x": 10.37, "y": 17.99, "px": 62.2, "py": 143.9}, "den": {"x": 24.1, "y": 12.45, "px": 144.6, "py": 99.6}, "aus": {"x": 31.62, "y": 21.46, "px": 189.7, "py": 171.7}, "dal": {"x": 32.59, "y": 19.17, "px": 195.5, "py": 153.4}, "chi": {"x": 42.09, "y": 10.26, "px": 252.6, "py": 82.1}, "atl": {"x": 45.45, "y": 18.27, "px": 272.7, "py": 146.2}, "mia": {"x": 49.8, "y": 25.43, "px": 298.8, "py": 203.5}, "dc": {"x": 53.07, "y": 13.29, "px": 318.4, "py": 106.3}, "ny": {"x": 56.21, "y": 11.47, "px": 337.2, "py": 91.7}, "bos": {"x": 59.26, "y": 9.75, "px": 355.6, "py": 78}};
+  var cityIdx = Math.max(0, CITIES.map(function(c){ return c.id; }).indexOf('buenos-aires'));
+  function placeLabel(c){ var lab = $('at-label'); lab.textContent = c.name; lab.style.setProperty('--x', c.x + '%'); lab.style.setProperty('--y', c.y + '%'); lab.classList.toggle('left', c.x > 62); }
+  function routeTo(c){
+    var p = MAPPOS[metro.id]; if (!p) return;
+    var mx = (c.px + p.px) / 2 + (c.px > p.px ? 70 : -70), my = (c.py + p.py) / 2;
+    var d = 'M' + p.px + ' ' + p.py + ' Q' + mx + ' ' + my + ' ' + c.px + ' ' + c.py, rm = $('at-route-m');
+    $('at-route').setAttribute('d', d);
+    if (rm) { rm.setAttribute('d', d); if (!reduce && rm.animate) rm.animate([{strokeDashoffset: 1}, {strokeDashoffset: 0}], {duration: 1200, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'both'}); else rm.style.strokeDashoffset = 0; }
+  }
+  function band(el, start, end){
+    var s0 = ((start % 24) + 24) % 24;
+    el.style.left = (s0 / 24 * 100) + '%'; el.style.width = (Math.min(24 - s0, end - start) / 24 * 100) + '%';
+  }
+  function renderMapTime(){
+    var c = CITIES[cityIdx], s = shared(c.tz), a = Math.abs(s.d);
+    var sy = $('say'); if (sy) sy.innerHTML = 'It’s ' + timeIn(metro.tz) + ' in ' + metro.city + ' and you’re <b>' + activity(hm(metro.tz).h) + '</b>. In ' + c.name + ' it’s ' + timeIn(c.tz) + ' and your team is <b>' + activity(hm(c.tz).h, c.cc) + '</b>.';
+    band($('band-you'), 9, 18); band($('band-team'), 9 - s.d, 18 - s.d);
+    $('strip-you').textContent = metro.city; $('strip-team').textContent = c.name;
+    var h = Math.round(s.h * 10) / 10;
+    $('shared').textContent = h + (h === 1 ? ' shared work hour' : ' shared work hours') + (s.d === 0 ? ', same clock' : ', ' + a + (a === 1 ? ' hour ' : ' hours ') + (s.d > 0 ? 'ahead of you' : 'behind you'));
+  }
+  function renderCity(){
+    var c = CITIES[cityIdx];
+    document.querySelectorAll('.at-pin[data-city], .chip[data-city]').forEach(function(el){ el.setAttribute('aria-pressed', el.getAttribute('data-city') === c.id ? 'true' : 'false'); });
+    placeLabel(c);
+    $('ch-name').textContent = c.name; $('ch-country').textContent = c.country; $('cityline').textContent = c.line;
+    routeTo(c); renderMapTime();
+  }
+  function renderYou(){
+    var p = MAPPOS[metro.id], y = $('at-you'); if (!p) return;
+    y.style.setProperty('--x', p.x + '%'); y.style.setProperty('--y', p.y + '%');
+    y.classList.toggle('left', p.x > 50); $('at-you-t').textContent = 'You, ' + metro.city;
+  }
+  document.querySelectorAll('[data-city]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var i = CITIES.map(function(c){ return c.id; }).indexOf(el.getAttribute('data-city'));
+      if (i < 0) return; cityIdx = i; renderCity();
+      if (el.classList.contains('poster-go')) $('atlas').scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'});
+    });
+    if (el.classList.contains('at-pin')) {
+      el.addEventListener('mouseenter', function(){ var c = CITIES.filter(function(x){ return x.id === el.getAttribute('data-city'); })[0]; if (c) placeLabel(c); });
+      el.addEventListener('mouseleave', function(){ placeLabel(CITIES[cityIdx]); });
+    }
+  });
+
+  // ---------- GTM loop: one stage at a time, people using AI
+  var STAGES = [{"n": "Signals", "who": "GTM engineer", "ai": "Scans hiring, funding and product news across your market with AI.", "dec": "Picks the signals worth acting on."}, {"n": "Research", "who": "GTM engineer", "ai": "Enriches accounts and contacts with AI and data tools.", "dec": "Checks every account against your real ICP."}, {"n": "Outreach", "who": "SDR", "ai": "Drafts first lines and sequences per account with AI.", "dec": "Rewrites, approves and sends in your voice."}, {"n": "Calls", "who": "SDR", "ai": "Turns replies and calls into clean notes with AI.", "dec": "Runs the calls and builds the relationship."}, {"n": "Pipeline", "who": "GTM engineer and SDRs", "ai": "Keeps the CRM updated with AI automations.", "dec": "Reports to you on what is moving and why."}], gi = 0, glTimer = null, glStopped = reduce, glVisible = false, glHover = false;
+  var gl = $('gl'), tabs = Array.prototype.slice.call(document.querySelectorAll('.gl-track [role="tab"]'));
+  function showStage(i, focus){
+    gi = i; var st = STAGES[i], panel = $('gl-panel');
+    tabs.forEach(function(t, k){ var on = k === i; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; t.classList.toggle('done', k < i); });
+    if (focus) tabs[i].focus();
+    document.querySelector('.gl-track').style.setProperty('--i', i);
+    panel.setAttribute('aria-labelledby', 'gt-' + i);
+    panel.classList.add('swap');
+    setTimeout(function(){ $('gl-who').textContent = st.who; $('gl-ai').textContent = st.ai; $('gl-dec').textContent = st.dec; panel.classList.remove('swap'); }, reduce ? 0 : 200);
+    schedule();
+  }
+  function schedule(){
+    clearTimeout(glTimer); gl.classList.remove('run');
+    if (glStopped || !glVisible || glHover) return;
+    void gl.offsetWidth; gl.classList.add('run');
+    glTimer = setTimeout(function(){ showStage((gi + 1) % STAGES.length); }, 4600);
+  }
+  tabs.forEach(function(t, k){
+    t.addEventListener('click', function(){ glStopped = true; showStage(k); });
+    t.addEventListener('keydown', function(e){
+      var n = e.key === 'ArrowRight' ? 1 : (e.key === 'ArrowLeft' ? -1 : 0); if (!n) return;
+      e.preventDefault(); glStopped = true; showStage((gi + n + STAGES.length) % STAGES.length, true);
+    });
+  });
+  gl.addEventListener('mouseenter', function(){ glHover = true; schedule(); });
+  gl.addEventListener('mouseleave', function(){ glHover = false; schedule(); });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ es.forEach(function(e){ glVisible = e.isIntersecting; schedule(); }); }, {threshold: 0.4}).observe(gl);
+
+  // ---------- hero clocks: your city and your next team's city, same workday
+  var HERO_TEAM = [
+    {n:'Buenos Aires, AR', tz:'America/Argentina/Buenos_Aires'}, {n:'Bogotá, CO', tz:'America/Bogota'},
+    {n:'Mexico City, MX', tz:'America/Mexico_City'}, {n:'São Paulo, BR', tz:'America/Sao_Paulo'},
+    {n:'Montevideo, UY', tz:'America/Montevideo'}, {n:'Lima, PE', tz:'America/Lima'},
+    {n:'Santiago, CL', tz:'America/Santiago'}, {n:'Mendoza, AR', tz:'America/Argentina/Mendoza'}
+  ], hti = 0;
+  function renderHeroClock(){
+    var t = HERO_TEAM[hti], h = Math.round(shared(t.tz).h);
+    $('ck-you').textContent = timeIn(metro.tz); $('ck-you-l').textContent = known() ? placeName() : (metro.zoneLabel || 'US Eastern Time');
+    $('ck-team').textContent = timeIn(t.tz); $('ck-team-l').textContent = t.n;
+  }
+  var heroSeen = true;
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ heroSeen = es[0].isIntersecting; }, {threshold: 0.1}).observe(document.querySelector('.hero'));
+  if (!reduce) setInterval(function(){
+    if (document.hidden || !heroSeen) return;
+    var el = $('ck-swap'); el.classList.add('out');
+    setTimeout(function(){ hti = (hti + 1) % HERO_TEAM.length; renderHeroClock(); el.classList.remove('out'); }, 300);
+  }, 4500);
+
+  // ---------- quote form, prefilled from the calculator
+  var formTouched = {};
+  ['f-metro','f-role','f-level','f-count'].forEach(function(id){ $(id).addEventListener('change', function(){ formTouched[id] = true; }); });
+  function syncForm(force){
+    if (force || !formTouched['f-metro']) $('f-metro').value = metro.id;
+    if (force || !formTouched['f-role']) $('f-role').value = FORM_ROLE[role];
+    if (force || !formTouched['f-level']) $('f-level').value = LEVELS[level];
+    if (force || !formTouched['f-count']) $('f-count').value = count;
+    var xg = $('exit-gap'); if (xg) xg.textContent = fmt(gapYear);
+    $('exit-sum').textContent = selectionText() + (known() ? ', for a team in ' + metro.city : ', for a team in the US') + '.';
+  }
+  function setErr(id, msg){ var f = $('f-' + id).closest('.field'); $('e-' + id).textContent = msg; f.classList.toggle('bad', !!msg); }
+  $('qform').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = $('f-name').value.trim(), email = $('f-email').value.trim(), company = $('f-company').value.trim(), ok = true;
+    setErr('name', name ? '' : 'Add your name.'); if (!name) ok = false;
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    setErr('email', emailOk ? '' : 'Add a work email like you@company.com.'); if (!emailOk) ok = false;
+    setErr('company', company ? '' : 'Add your company.'); if (!company) ok = false;
+    if (!ok) { var first = document.querySelector('.field.bad input'); if (first) first.focus(); return; }
+    var form = e.target, data = new FormData(form), status = $('form-status');
+    var m = byMetro[$('f-metro').value]; data.set('city', m && m.id !== 'us' ? m.city + ', ' + m.st : ($('f-metro').value === 'us' ? 'Not set' : 'Other US city'));
+    var endpoint = form.getAttribute('data-endpoint');
+    if (endpoint) {
+      status.textContent = 'Sending...';
+      fetch(endpoint, {method:'POST', body:data, headers:{'Accept':'application/json'}}).then(function(r){
+        if (!r.ok) throw new Error();
+        form.reset(); status.textContent = 'Thanks, ' + name.split(' ')[0] + '. You will get your rates within 24 hours.';
+      }).catch(function(){ status.textContent = 'This could not be sent. Please email hello@vayra.team.'; });
+      return;
+    }
+    var lines = []; data.forEach(function(v, k){ if (v) lines.push(k.replace('_', ' ') + ': ' + v); });
+    var href = 'mailto:hello@vayra.team?subject=' + encodeURIComponent('Rates for ' + company) + '&body=' + encodeURIComponent(lines.join('\n'));
+    status.textContent = 'Your email app should open with your request. If it does not, write to hello@vayra.team.';
+    window.location.href = href;
+  });
+
+  // ---------- everything that depends on the visitor's city
+  function renderAll(){
+    document.querySelectorAll('select[data-metro]').forEach(function(sel){ sel.value = metro.id; });
+    $('h-city').textContent = known() ? placeName() : 'Pick your US city';
+    var lm = $('loc-me'); if (lm) lm.hidden = !navigator.geolocation || located === 'ip' || located === 'geo';
+    renderHeroClock();
+    renderCalc(); if ($('atlas')) { renderYou(); renderCity(); }
+  }
+  function nearest(lat, lon){ var best = null, bd = 1e9; METROS.forEach(function(k){ if (k.id === 'us') return; var dl = k.lat - lat, dn = (k.lon - lon) * Math.cos(lat * Math.PI / 180), d = dl * dl + dn * dn; if (d < bd) { bd = d; best = k; } }); return best; }
+  try {
+    if (window.fetch && window.AbortController) {
+      var ac = new AbortController(); setTimeout(function(){ ac.abort(); }, 2500);
+      fetch('https://ipapi.co/json/', {signal: ac.signal}).then(function(r){ return r.ok ? r.json() : null; }).then(function(g){
+        if (!g || g.country_code !== 'US' || typeof g.latitude !== 'number') return;
+        var n = nearest(g.latitude, g.longitude); if (!n) return;
+        metro = n; located = 'ip'; helloCity = g.city || n.city; helloSt = g.region_code || n.st;
+        renderAll();
+      }).catch(function(){});
+    }
+  } catch(e) {}
+
+  // ---------- use my location (asks the browser, only on click)
+  var lmBtn = $('loc-me');
+  if (lmBtn) lmBtn.addEventListener('click', function(){
+    if (!navigator.geolocation) return;
+    var note = $('loc-note'); note.textContent = 'Finding your city...';
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var la = pos.coords.latitude, lo = pos.coords.longitude;
+      if (la < 18 || la > 72 || lo < -170 || lo > -60) { note.textContent = 'You look outside the US. Pick your US city from the list.'; return; }
+      var n = nearest(la, lo); if (!n) return;
+      metro = n; located = 'geo'; note.textContent = 'Closest metro to you: ' + n.city + ', ' + n.st + '.'; renderAll();
+    }, function(){ note.textContent = 'We could not get your location. Pick your US city from the list.'; }, {timeout: 8000, maximumAge: 600000});
+  });
+
+  // ---------- leaving: their numbers, what happens next, one field
+  var exitEl = $('exit'), exitShown = false, lastFocus = null;
+  function seen(){ try { return sessionStorage.getItem('vayra-exit') === '1'; } catch(e){ return exitShown; } }
+  function mark(){ exitShown = true; try { sessionStorage.setItem('vayra-exit', '1'); } catch(e){} }
+  function openExit(){
+    if (exitShown || seen()) return; mark(); lastFocus = document.activeElement;
+    $('exit-gap').textContent = fmt(gapYear);
+    $('exit-a').hidden = false; $('exit-b').hidden = true; exitEl.hidden = false; hideFollow();
+    setTimeout(function(){ $('x-email').focus(); }, 40);
+  }
+  function closeExit(){ exitEl.hidden = true; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+  document.addEventListener('mouseout', function(e){ if (!e.relatedTarget && e.clientY <= 0) openExit(); });
+  var maxDepth = 0, lastY = window.scrollY, lastT = Date.now(), jumpAt = 0;
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) jumpAt = Date.now(); });
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY, t = Date.now(), h = document.documentElement.scrollHeight - innerHeight;
+    if (h > 0) maxDepth = Math.max(maxDepth, y / h);
+    if (window.matchMedia('(pointer: coarse)').matches && maxDepth > 0.45 && (lastY - y) > 140 && (t - lastT) < 260 && t - jumpAt > 1500) openExit();
+    lastY = y; lastT = t;
+  }, {passive:true});
+  exitEl.addEventListener('click', function(e){ if (e.target === exitEl) closeExit(); });
+  $('exit-close').addEventListener('click', closeExit);
+  $('exit-later').addEventListener('click', closeExit);
+  $('exit-done').addEventListener('click', closeExit);
+  $('exit-more').addEventListener('click', function(){ exitEl.hidden = true; syncForm(true); var em = $('x-email').value.trim(); if (em && !$('f-email').value) $('f-email').value = em; setTimeout(function(){ $('f-name').focus({preventScroll:true}); }, 400); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !exitEl.hidden) closeExit(); });
+  $('exit-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var em = $('x-email').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { $('exit-err').textContent = 'Add a work email like you@company.com.'; $('x-email').focus(); return; }
+    $('exit-err').textContent = '';
+    var data = new FormData();
+    data.set('email', em); data.set('role', FORM_ROLE[role]); data.set('level', LEVELS[level]); data.set('team_size', count); data.set('city', known() ? metro.city + ', ' + metro.st : 'Not set'); data.set('source', 'exit');
+    var endpoint = $('qform').getAttribute('data-endpoint');
+    $('exit-to').textContent = em;
+    if (endpoint) {
+      fetch(endpoint, {method:'POST', body:data, headers:{'Accept':'application/json'}}).catch(function(){});
+      $('exit-b-note').textContent = 'We reply within 24 hours.';
+    } else {
+      var lines = []; data.forEach(function(v, k){ lines.push(k.replace('_', ' ') + ': ' + v); });
+      window.location.href = 'mailto:hello@vayra.team?subject=' + encodeURIComponent('Rates for my team') + '&body=' + encodeURIComponent(lines.join('\n'));
+      $('exit-b-note').textContent = 'Your email app should open with your request. Send it and we reply within 24 hours.';
+    }
+    $('exit-a').hidden = true; $('exit-b').hidden = false; $('exit-more').focus();
+  });
+
+  // ---------- follow-up bar: your numbers stay with you while you read
+  var follow = $('follow'), followOff = false;
+  try { followOff = sessionStorage.getItem('vayra-follow') === 'off'; } catch(e) {}
+  function hideFollow(){ follow.classList.remove('on'); }
+  function checkFollow(){
+    if (followOff || !exitEl.hidden) { hideFollow(); return; }
+    var c = $('calc').getBoundingClientRect(), q = $('quote').getBoundingClientRect();
+    var show = c.bottom < 0 && q.top > innerHeight;
+    follow.classList.toggle('on', show);
+  }
+  var fTick = false;
+  window.addEventListener('scroll', function(){ if (fTick) return; fTick = true; requestAnimationFrame(function(){ fTick = false; checkFollow(); }); }, {passive:true});
+  $('follow-x').addEventListener('click', function(){ followOff = true; hideFollow(); try { sessionStorage.setItem('vayra-follow', 'off'); } catch(e) {} });
+  $('follow-go').addEventListener('click', function(){ hideFollow(); syncForm(true); setTimeout(function(){ $('f-name').focus({preventScroll:true}); }, 400); });
+  document.querySelectorAll('a[href="#quote"]').forEach(function(a){ a.addEventListener('click', function(){ mark(); }); });
+
+  // ---------- rotating roles in the headline
+  var rot = document.querySelector('.rot');
+  if (rot) {
+    var words = rot.querySelectorAll('.rot-w'), wi = 0;
+    words[0].classList.add('on');
+    if (!reduce && words.length > 1) setInterval(function(){
+      if (document.hidden || !heroSeen) return;
+      var cur = words[wi]; wi = (wi + 1) % words.length; var nx = words[wi];
+      cur.classList.remove('on'); cur.classList.add('off'); nx.classList.remove('off'); nx.classList.add('on');
+      setTimeout(function(){ cur.classList.remove('off'); }, 600);
+    }, 2200);
+  }
+
+  // ---------- reveal once on scroll, map pins pop in
+  if ('IntersectionObserver' in window && !reduce) {
+    var rio = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } }); }, {threshold: 0.2, rootMargin: '0px 0px -8% 0px'});
+    document.querySelectorAll('[data-rv]').forEach(function(el){ rio.observe(el); });
+  } else document.querySelectorAll('[data-rv]').forEach(function(el){ el.classList.add('in'); });
+
+  renderAll();
+  setInterval(function(){ if ($('atlas')) renderMapTime(); renderHeroClock(); }, 30000);
+})();
+
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://vayra.team/#org",
+   "name": "Vayra",
+   "url": "https://vayra.team/",
+   "logo": "https://vayra.team/icon-512.png",
+   "email": "hello@vayra.team",
+   "description": "Vayra helps US companies hire senior, AI-native developers, AI engineers, GTM engineers and SDRs from Latin America who work US hours.",
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "knowsAbout": [
+    "GTM engineering",
+    "Sales development",
+    "RevOps",
+    "Software development",
+    "AI engineering",
+    "Senior talent in Latin America"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://vayra.team/#website",
+   "url": "https://vayra.team/",
+   "name": "Vayra",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://vayra.team/#org"
+   }
+  },
+  {
+   "@type": "Service",
+   "name": "GTM engineers and SDRs",
+   "serviceType": "GTM engineering and sales development",
+   "provider": {
+    "@id": "https://vayra.team/#org"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "description": "GTM engineers build outbound, enrichment and CRM with AI tools. SDRs, marketing and ops people run it every day."
+  },
+  {
+   "@type": "Service",
+   "name": "AI-native developers",
+   "serviceType": "Software development",
+   "provider": {
+    "@id": "https://vayra.team/#org"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "description": "Senior developers from Latin America who code, test and review with AI as part of the daily work, for web, mobile, data and cloud."
+  },
+  {
+   "@type": "Service",
+   "name": "AI engineers",
+   "serviceType": "AI engineering",
+   "provider": {
+    "@id": "https://vayra.team/#org"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   },
+   "description": "Engineers who build AI into the product: LLM features, retrieval, evals and the data behind them."
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When do I pay?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Interviews are free. You pay only when you decide to hire someone."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does a Vayra team cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rates start at about $50 an hour for a semi-senior software or GTM engineer and $3,000 a month for an SDR. Senior and manager levels cost more. Send the form and you get your rates within 24 hours."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if a hire does not work out?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We replace them at no cost."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I start with one person?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Start with one person and grow from there."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does AI-native mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI is part of how they work every day: writing and reviewing code, research, enrichment and first drafts. They also know when to stop and check the output."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</body>
+</html>

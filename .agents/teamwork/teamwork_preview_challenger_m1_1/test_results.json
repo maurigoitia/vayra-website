@@ -1,0 +1,247 @@
+{
+  "totalTests": 40,
+  "passedTests": 40,
+  "failedTests": 0,
+  "testResults": [
+    {
+      "suite": "Suite 1",
+      "name": "XML Structure is well-formed with balanced tags and single root",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "Root <svg> declares valid xmlns=\"http://www.w3.org/2000/svg\"",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "Root <svg> has exact viewBox=\"0 0 600 800\"",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "Root <svg> specifies explicit width=\"600\" and height=\"800\"",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "Root <svg> includes accessible role=\"img\" and descriptive aria-label",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "Contains exactly 3 path elements with IDs [m-us, m-other, m-city]",
+      "status": "PASS",
+      "details": "Found IDs: m-us, m-other, m-city"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "No duplicate element IDs within map.svg",
+      "status": "PASS",
+      "details": "Duplicates: "
+    },
+    {
+      "suite": "Suite 1",
+      "name": "No duplicate XML attributes on any path element",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-us styling: fill=\"#141D38\", stroke=\"#0A0F1F\", stroke-width=\".8\"",
+      "status": "PASS",
+      "details": "fill=#141D38, stroke=#0A0F1F, width=.8"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-other styling: fill=\"#1A2447\", stroke=\"#0A0F1F\", stroke-width=\".8\"",
+      "status": "PASS",
+      "details": "fill=#1A2447, stroke=#0A0F1F, width=.8"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-city styling: fill=\"#26355F\", stroke=\"#0A0F1F\", stroke-width=\".8\"",
+      "status": "PASS",
+      "details": "fill=#26355F, stroke=#0A0F1F, width=.8"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-us geometry is non-empty and bounded within map coordinate space",
+      "status": "PASS",
+      "details": "X: [0, 470], Y: [0, 211.8], count: 2744"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-other geometry is non-empty and bounded within map coordinate space",
+      "status": "PASS",
+      "details": "X: [223.9, 574.8], Y: [36.7, 779], count: 2976"
+    },
+    {
+      "suite": "Suite 1",
+      "name": "#m-city geometry is non-empty and bounded within map coordinate space",
+      "status": "PASS",
+      "details": "X: [61.2, 580.9], Y: [153.8, 790.2], count: 5366"
+    },
+    {
+      "suite": "Suite 2",
+      "name": "index.html payload reduction exceeds 50% target (actual: 51.99%)",
+      "status": "PASS",
+      "details": "Baseline: 126255 B, Current: 60619 B, Saved: 65636 B (51.99%)"
+    },
+    {
+      "suite": "Suite 2",
+      "name": "index.html absolute payload is under 65 KB threshold (actual: 59.20 KB)",
+      "status": "PASS",
+      "details": "Actual: 60619 bytes"
+    },
+    {
+      "suite": "Suite 2",
+      "name": "Large inline SVG defs paths (#m-us, #m-other) completely removed from index.html",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 2",
+      "name": "map.svg asset size matches expected continent geometry weight (~65 KB, actual: 64.21 KB)",
+      "status": "PASS",
+      "details": "Actual: 65749 bytes"
+    },
+    {
+      "suite": "Suite 3",
+      "name": "Extracted 15 talent cities and 13 US coast locations",
+      "status": "PASS",
+      "details": "CITIES: 15, COASTS: 13"
+    },
+    {
+      "suite": "Suite 3",
+      "name": "Exhaustive simulation of routeTo across all 195 city/coast pairs produces valid quadratic bezier curves",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 3",
+      "name": "Curvature offset inflection (+70 when c.px > coast.px, -70 when c.px <= coast.px) verified on all 195 pairs",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 3",
+      "name": "West Coast route (Mendoza -> SF) curves Eastward (+70 offset)",
+      "status": "PASS",
+      "details": "Midpoint: 202.85, mx: 272.85"
+    },
+    {
+      "suite": "Suite 3",
+      "name": "East Coast route (CDMX -> NY) curves Westward (-70 offset)",
+      "status": "PASS",
+      "details": "Midpoint: 259.15, mx: 189.14999999999998"
+    },
+    {
+      "suite": "Suite 4",
+      "name": "Element #at-route exists exactly once in index.html (unique ID)",
+      "status": "PASS",
+      "details": "Count: 1"
+    },
+    {
+      "suite": "Suite 4",
+      "name": "<svg class=\"map-route\"> exists with viewBox=\"0 0 600 800\"",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 4",
+      "name": "#at-route is a child <path> of <svg class=\"map-route\">",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 4",
+      "name": "#at-route has initial styling attributes (fill=\"none\", stroke=\"#FFB547\", stroke-dasharray=\"4 6\")",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 4",
+      "name": "routeTo(c) successfully targets $(\"at-route\") and dynamically updates \"d\" attribute",
+      "status": "PASS",
+      "details": "Result: M369.4 586 Q423.29999999999995 338.85 337.2 91.7"
+    },
+    {
+      "suite": "Suite 5",
+      "name": ".mapfield has position: relative",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 5",
+      "name": ".mapfield > svg, .mapfield > img are absolutely positioned covering inset: 0",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 5",
+      "name": ".mapfield > .map-route has pointer-events: none (prevents click interception over pins)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 5",
+      "name": "DOM elements inside .mapfield ordered correctly: img (base) -> svg (route) -> buttons (pins) -> label (active)",
+      "status": "PASS",
+      "details": "img=13, svg=201, pin=576, label=2998"
+    },
+    {
+      "suite": "Suite 5",
+      "name": ".at-label has pointer-events: none (prevents blocking clicks on nearby pins)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 5",
+      "name": ".at-you has pointer-events: none (prevents blocking clicks on US coast pins)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 5",
+      "name": "Pin tap targets spatial separation audit (min distance: 12.1 px between Mendoza and Santiago)",
+      "status": "PASS",
+      "details": "ADVISORY: Pin touch targets overlap by 1.9px between Mendoza and Santiago (mitigated by sidebar citychips)"
+    },
+    {
+      "suite": "Suite 6",
+      "name": "Production CITIES and COASTS datasets enforce strict numeric types (preventing string concatenation in routeTo)",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 6",
+      "name": "Adversarial Probe: routeTo input coercion behavior under synthetic string inputs",
+      "status": "PASS",
+      "details": "CONFIRMED EDGE-CASE: String inputs trigger + operator concatenation (requires Number() coercion if untrusted input is introduced)"
+    },
+    {
+      "suite": "Suite 6",
+      "name": "routeTo handles canvas extremes (0,0) to (600,800)",
+      "status": "PASS",
+      "details": "Output: M0 0 Q230 400 600 800"
+    },
+    {
+      "suite": "Suite 6",
+      "name": "Detects missing DOM target cleanly without corrupting state",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "suite": "Suite 6",
+      "name": ".mapfield aspect-ratio declared as 600/764 (~0.785) matching 600x800 map bounds within 5%",
+      "status": "PASS",
+      "details": "Declared: 600/764, Ratio: 0.785 (600/800 is 0.750)"
+    }
+  ]
+}

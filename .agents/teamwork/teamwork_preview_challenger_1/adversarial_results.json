@@ -1,0 +1,136 @@
+{
+  "allPassed": false,
+  "results": [
+    {
+      "test": "DOM Elements Verification",
+      "pass": false,
+      "detail": {
+        "hasJsClass": false,
+        "rail": true,
+        "railPrev": true,
+        "railNext": true,
+        "gtmTabs": 5,
+        "gtmPanel": true,
+        "faqInput": true,
+        "faqItems": 9,
+        "cursorDot": false,
+        "cursorRing": false,
+        "heroFlashlight": true
+      }
+    },
+    {
+      "test": "Talent Rail Carousel Stress (Rapid clicks & scroll bounds)",
+      "pass": true,
+      "detail": {
+        "initialScroll": 4,
+        "initialPrevDisabled": true,
+        "maxScroll": 467,
+        "nextDisabledAtEnd": true,
+        "prevEnabledAtEnd": true,
+        "finalScroll": 4,
+        "prevDisabledAtStart": true,
+        "scrollWidth": 1178,
+        "clientWidth": 711,
+        "scrollBoundsValid": true
+      }
+    },
+    {
+      "test": "GTM 5-Stage Rapid Switching & DOM Synchronization",
+      "pass": true,
+      "detail": {
+        "finalTab": 4,
+        "agentStageText": "Pipeline",
+        "personStageText": "Pipeline",
+        "errors": []
+      }
+    },
+    {
+      "test": "FAQ Real-Time Search, Rapid Typing & Adversarial Input",
+      "pass": true,
+      "detail": {
+        "checks": [
+          {
+            "query": "pricing",
+            "matchCount": 1,
+            "hasMatches": true,
+            "emptyShown": false,
+            "countText": "Showing 1 of 9 questions"
+          },
+          {
+            "query": "special_chars",
+            "matchCount": 0,
+            "emptyShown": true,
+            "emptyQueryText": "(.*)+?[^$|#@!",
+            "countText": "No questions found"
+          },
+          {
+            "step": "clear_button",
+            "inputEmpty": true,
+            "allVisible": true,
+            "firstOpen": true,
+            "secondOpen": false
+          },
+          {
+            "step": "reset_button",
+            "inputEmptyAfterReset": true,
+            "allVisibleAfterReset": true,
+            "emptyHidden": true
+          }
+        ],
+        "rapidSettleCount": 9,
+        "countText": "Showing all 9 questions"
+      }
+    },
+    {
+      "test": "Accessibility: prefers-reduced-motion: reduce",
+      "pass": true,
+      "detail": {
+        "reduceMotionMatches": true,
+        "allRevealedImmediately": true,
+        "revealsCount": 17,
+        "computedStyles": [
+          {
+            "opacity": "1",
+            "transform": "none",
+            "animation": "none",
+            "transition": "0s"
+          },
+          {
+            "opacity": "1",
+            "transform": "none",
+            "animation": "none",
+            "transition": "0s"
+          },
+          {
+            "opacity": "1",
+            "transform": "none",
+            "animation": "none",
+            "transition": "0s"
+          }
+        ],
+        "dotDisplay": "block",
+        "ringDisplay": "block"
+      }
+    },
+    {
+      "test": "Graceful Degradation: Touch Device (pointer: coarse, mobile viewport)",
+      "pass": true,
+      "detail": {
+        "finePointer": false,
+        "coarsePointer": true,
+        "hasPointerClass": false,
+        "cardWidth": 308,
+        "gtmNavScrollable": true
+      }
+    },
+    {
+      "test": "Zero Runtime Exceptions & Zero Console Errors",
+      "pass": true,
+      "detail": {
+        "projectExceptions": [],
+        "fatalConsoleErrors": []
+      }
+    }
+  ],
+  "timestamp": "2026-10-15T16:24:21.318Z"
+}

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "vayra-team"
+  },
+  "targets": {
+    "vayra-team": {
+      "hosting": {
+        "default": [
+          "vayra-team"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -1,0 +1,52 @@
+# Vayra
+
+> Vayra builds AI-augmented GTM and engineering teams from Latin America for US companies. Senior people (GTM engineers, SDRs, marketing and ops people, software engineers) work alongside orchestrated AI agents, on US hours, either inside the client's team or owning a goal end to end.
+
+Website: https://vayra.team/
+Contact: hello@vayra.team
+
+## What Vayra offers
+
+- GTM engineers and teams: GTM engineers build outbound, enrichment, CRM and the automations that connect them. SDRs, marketing and ops people run it every day.
+- Orchestrated teams: a small senior team plus AI agents, set up around one goal. People make the calls, agents take the repetitive work, and the client sees every step.
+- AI-augmented engineering: senior engineers who build with AI in code, tests, reviews and docs, for web, mobile, data and cloud.
+
+## Two ways to start
+
+- Add people to your team: they join your Slack, standups and tools.
+- Hand Vayra a goal: a Vayra squad owns it, from discovery to production or from first signal to booked meeting.
+
+## How the GTM system works
+
+Stages: Signals, Research, Outreach, Conversations, Pipeline.
+At each stage AI agents do the repetitive work (watching news, enriching accounts, drafting first lines, summarizing calls, updating the CRM) and people own the decisions (choosing signals, checking fit, approving and sending, running calls, reporting).
+
+## How Vayra works with clients
+
+Intro call, calibrate, shortlist, kickoff, ongoing support. Vayra meets every person before the client does and looks at seniority, English, and how they work with AI and with a team.
+
+## Where the people are
+
+Across Latin America, working on US time zones. Cities on the map: Mexico City, Guadalajara, Bogotá, Medellín, Lima, Santiago, Asunción, São Paulo, Rio de Janeiro, Florianópolis, Córdoba, Rosario, Mendoza, Buenos Aires and Montevideo.
+
+## Starting rates
+
+| Role | Semi-senior | Senior | Manager |
+| :--- | :--- | :--- | :--- |
+| Software engineers | $50 / hr | $70 / hr | $90 / hr |
+| GTM engineers | $50 / hr | $65 / hr | $85 / hr |
+| SDRs | $3,000 / mo | $4,000 / mo | $5,000 / mo |
+
+Quotes: email hello@vayra.team with the role, the level and where your team is.
+
+## Why LATAM
+
+Working with LATAM teams means a shared work culture, time zone alignment with the US for real-time collaboration, and access to highly skilled senior talent at competitive rates.
+
+## FAQ
+
+- What is Vayra? Vayra builds AI-augmented GTM and engineering teams from Latin America for US companies.
+- What does AI-augmented mean? Every person works with AI tools and agents as part of the daily work, and knows when to trust them and when to check.
+- What is an orchestrated team? Senior people plus AI agents organized around one goal, with a clear owner for every decision.
+- What does a GTM engineer do? Builds the system behind the pipeline: data, enrichment, sequences, CRM and the automations that connect them.
+- Can a company start with one person? Yes.

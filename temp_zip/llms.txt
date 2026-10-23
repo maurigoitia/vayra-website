@@ -1,0 +1,44 @@
+# Vayra
+
+> Vayra helps US companies hire senior, AI-native developers, AI engineers, GTM engineers and SDRs from Latin America who work US hours. Interviews are free and companies pay only when they hire.
+
+Website: https://vayra.team/
+Contact: hello@vayra.team
+
+## Who you can hire
+
+- GTM engineers and SDRs: outbound, enrichment, CRM and RevOps, plus SDRs who run it every day.
+- Developers: full-stack, mobile, data, cloud and DevOps.
+- AI engineers: LLMs and RAG, MLOps, Python and evals.
+
+Everyone is senior and AI-native: AI is part of how they work every day, and they know when to stop and check the output.
+
+## How it works
+
+- Today: tell Vayra who you need (role, level, how many, US city). It takes a minute.
+- Within 24 hours: monthly rates for your team, by email.
+- In about a week: a shortlist of senior profiles vetted for the role. Interviews are free.
+- When you say yes: Vayra signs the contracts and handles payments. If a hire is not the right fit, Vayra replaces them at no cost.
+
+## How a Vayra GTM team works
+
+Stages: Signals, Research, Outreach, Calls, Pipeline. GTM engineers build the system and SDRs run it, using AI at each stage: scanning market news, enriching accounts, drafting first lines, turning calls into notes and keeping the CRM updated. A person makes every decision.
+
+## Where the people are
+
+15 cities on US hours: Mexico City, Guadalajara, Bogotá, Medellín, Lima, Santiago, Asunción, Córdoba, Rosario, Mendoza, Buenos Aires, Montevideo, São Paulo, Rio and Florianópolis. The site shows the time in the visitor's US city next to the time in Latin America.
+
+## Starting rates
+
+- Software engineers: from about $50 an hour (semi-senior), $70 (senior), $90 (manager).
+- GTM engineers: from about $50 an hour (semi-senior), $65 (senior), $85 (manager).
+- SDRs: from $3,000 a month (semi-senior), $4,000 (senior), $5,000 (manager).
+- Quotes: https://vayra.team/#quote or hello@vayra.team.
+
+## FAQ
+
+- When do I pay? Interviews are free. You pay only when you hire.
+- How much does it cost? From about $50 an hour for a semi-senior engineer and $3,000 a month for an SDR; senior and manager levels cost more.
+- What if a hire does not work out? Vayra replaces them at no cost.
+- Can I start with one person? Yes.
+- What does AI-native mean? AI is part of how they work every day, and they know when to check the output.

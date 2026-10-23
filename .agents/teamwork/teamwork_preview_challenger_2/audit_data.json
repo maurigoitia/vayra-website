@@ -1,0 +1,680 @@
+{
+  "lockedCopyVerifications": [
+    {
+      "name": "Title Tag",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Meta Description",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "OG Image Alt",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav Brand",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav: What we do",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav: GTM system",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav: Cities",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav: How we work",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav: FAQ",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Nav CTA",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero Route Badge",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero H1",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero Lede Paragraph",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero CTA Ghost",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero Terminal Header",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Hero Terminal Command",
+      "passed": false,
+      "details": "NOT_FOUND: \"$ vayra orchestrate --team gtm --icp &quot;your best customers&quot;\""
+    },
+    {
+      "name": "Terminal Row 1",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Terminal Row 2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Terminal Row 3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Terminal Row 4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Terminal Row 5",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Terminal Status",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: Outbound systems",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: Enrichment",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: CRM and RevOps",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: SDR teams",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: AI agents",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: Web and mobile",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: Data pipelines",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Ticker: Cloud",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "What We Do Eyebrow",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "What We Do H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 1 Tag",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 1 H3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 1 Desc",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 2 Tag",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 2 H3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 2 Desc",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 3 Tag",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 3 H3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Card 3 Desc",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Start Label",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Option 1 H4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Option 1 Desc",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Option 2 H4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Option 2 Desc",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Eyebrow",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Lede",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Agent Signals",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Agent Research",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Agent Outreach",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Agent Conversations",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Agent Pipeline",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Person Signals",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Person Research",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Person Outreach",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Person Conversations",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Person Pipeline",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "GTM Footnote",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Cities Eyebrow",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Cities H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Cities Lede",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Cities US Label",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Cities Latam Label",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Mendoza",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Buenos Aires",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Cordoba",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Rosario",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Montevideo",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Asuncion",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Santiago",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Lima",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Bogota",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Medellin",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote CDMX",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Guadalajara",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Sao Paulo",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Rio",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "City Quote Florianopolis",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Map Caption",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Eyebrow",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Step 1",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Step 2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Step 3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Step 4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Step 5",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Body",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Timezones H3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How Timezones Body",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How After Hire H3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "How After Hire Body",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q1",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A1",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A3",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A4",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q5",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A5",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q6",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A6",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q7",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A7",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q8",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A8",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ Q9",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "FAQ A9",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Contact Eyebrow",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Contact H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Contact Lede",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Contact Email",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Contact Copy Btn",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Footer Tagline",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Footer Copyright",
+      "passed": false,
+      "details": "NOT_FOUND: \"© 2026 Vayra\""
+    },
+    {
+      "name": "Exit Modal H2",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Exit Modal Body",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "Exit Modal Dismiss",
+      "passed": true,
+      "details": "VERBATIM_MATCH"
+    },
+    {
+      "name": "JSON-LD FAQ Integrity",
+      "passed": true,
+      "details": "9 FAQs validated"
+    }
+  ],
+  "textDeletions": [
+    {
+      "name": "All original text blocks present",
+      "passed": false,
+      "details": "Missing: [\"Vayra | AI-augmented GTM and engineering teams from Latin America\",\"and engineering teams.\",\"LatAm talent, augmented by AI.\",\"Warm coffee, high-tech plays, and a vibrant local culture. We build the future of work from Latin America, combining human ingenuity with the latest AI workflows.\",\"Contact Vayra\",\"Before you go, get your quote.\",\"Send us one email with the role, the level and where your team is. We reply with real rates for your team.\",\"1 software engineer, senior level, for a team in New York.\",\"Copy hello@vayra.team\",\"Not now\",\"Hey! Let me show you how Vayra works\",\"+ Math.round(n).toLocaleString('en-US'); }; function quoteHref(){ var who = Object.keys(teamCounts).filter(function(r){ return teamCounts[r]>0; }).map(function(r){ return teamCounts[r] + ' ' + ROLE_NAMES[r] + (teamCounts[r]>1?'s':'') + ' (' + LEVELS[teamLevels[r]].toLowerCase() + ')'; }).join(', '); if (!who) who = 'a team'; var body = 'Hi Vayra,\\\\n\\\\nWe are looking for: ' + who + '\\\\nOur team is in: ' + coast.city + ' (' + coast.region + ')\\\\nIdeal start date: \\\\n\\\\nThanks,\\\\n'; return 'mailto:hello@vayra.team?subject=' + encodeURIComponent('Quote: ' + who) + '&body=' + encodeURIComponent(body); } function people(ratio){ var box = $('people'); if(box) { box.innerHTML = ''; } } function renderCalc(){ var div = per === 'month' ? 12 : 1; var totalUS = 0, totalLA = 0; var totalCount = 0; Object.keys(teamCounts).forEach(function(r) { var c = teamCounts[r]; var l = teamLevels[r]; totalCount += c; if(c > 0) { var usOne = usSalary(r, l) / (1 - (benefitsPct/100)); var laOne = vayraYear(r, l); totalUS += (usOne * c / div); totalLA += (laOne * c / div); } }); $('t-us').textContent = 'US team cost, salary + benefits (' + totalCount + ' people)'; $('t-la').textContent = 'Vayra team total (' + totalCount + ' people)'; tween('v-us', totalUS); tween('v-la', totalLA); tween('v-gap', Math.max(0, totalUS - totalLA)); var gapL = $('gap-l'); if(gapL) gapL.textContent = 'You save up to, ' + (per === 'month' ? 'per month' : 'per year'); var br = $('ben-range'); if(br) { br.value = benefitsPct; br.style.setProperty('--p', (benefitsPct / 60 * 100) + '%'); } document.querySelectorAll('[data-per]').forEach(function(el){ el.setAttribute('aria-pressed', el.getAttribute('data-per') === per ? 'true' : 'false'); }); $('b-us').style.width = '100%'; $('b-la').style.width = totalUS > 0 ? Math.min(100, totalLA/totalUS*100).toFixed(1) + '%' : '0%'; var eqText = $('eq-text'); if (eqText) eqText.innerHTML = 'Build your ideal combination of engineers and GTM pros above to see how the costs compare.'; people(1); // Update DOM counts Object.keys(teamCounts).forEach(function(r) { var el = $('count-' + r); if(el) el.textContent = teamCounts[r]; }); var href = quoteHref(); var qb = $('quote-btn'); if(qb) qb.setAttribute('href', href); var xq = $('exit-quote'); if (xq) xq.setAttribute('href', href); } calcReady = true; // Attach team builder events document.querySelectorAll('.ctrl-btn.plus').forEach(function(btn){ btn.addEventListener('click', function(){ var target = btn.getAttribute('data-target'); teamCounts[target]++; renderCalc(); }); }); document.querySelectorAll('.ctrl-btn.minus').forEach(function(btn){ btn.addEventListener('click', function(){ var target = btn.getAttribute('data-target'); if(teamCounts[target] > 0) teamCounts[target]--; renderCalc(); }); }); document.querySelectorAll('.level-select').forEach(function(sel){ sel.addEventListener('change', function(){ var target = sel.getAttribute('data-role-id'); teamLevels[target] = sel.value; renderCalc(); }); }); document.querySelectorAll('[data-per]').forEach(function(el){ el.addEventListener('click', function(){ per = el.getAttribute('data-per'); renderCalc(); }); }); var br = $('ben-range'); if (br) br.addEventListener('input', function(e){ benefitsPct = parseInt(e.target.value, 10) || 0; var bel=$('ben'); if(bel) bel.textContent = benefitsPct; renderCalc(); }); // ---- exit intent: one clear ask before someone leaves var exitEl = $('exit'), shown = false, lastFocus = null; function seen(){ try { return sessionStorage.getItem('vayra-exit') === '1'; } catch(e){ return shown; } } function mark(){ shown = true; try { sessionStorage.setItem('vayra-exit','1'); } catch(e){} } function openExit(){ if (shown || seen() || !exitEl) return; mark(); lastFocus = document.activeElement; exitEl.hidden = false; setTimeout(function(){ $('exit-quote').focus(); }, 30); } function closeExit(){ exitEl.hidden = true; if (lastFocus && lastFocus.focus) lastFocus.focus(); } document.addEventListener('mouseout', function(e){ if (!e.relatedTarget && e.clientY\",\"0) maxDepth = Math.max(maxDepth, y / h); if (window.matchMedia('(pointer: coarse)').matches && maxDepth > 0.45 && (lastY - y) > 140 && (t - lastT)\"]"
+    }
+  ],
+  "abstraLeakChecks": [
+    {
+      "name": "Zero Abstra Copy Leakage",
+      "passed": true,
+      "details": "No Abstra brand, slogans, persona names, or marketing copy found"
+    }
+  ],
+  "newTextIntroduced": [
+    {
+      "name": "New UI text: Vayra | Hire Top 1% Latam Soft",
+      "passed": true,
+      "details": "Vayra | Hire Top 1% Latam Software Engineers & GTM Talent"
+    },
+    {
+      "name": "New UI text: &larr;",
+      "passed": true,
+      "details": "&larr;"
+    },
+    {
+      "name": "New UI text: Showing all 9 questions",
+      "passed": true,
+      "details": "Showing all 9 questions"
+    },
+    {
+      "name": "New UI text: No questions found matching \"",
+      "passed": true,
+      "details": "No questions found matching \""
+    },
+    {
+      "name": "New UI text: Clear search",
+      "passed": true,
+      "details": "Clear search"
+    },
+    {
+      "name": "New UI text: Scaling your engineering or GT",
+      "passed": true,
+      "details": "Scaling your engineering or GTM team?"
+    },
+    {
+      "name": "New UI text: Your growth shouldn't be bottl",
+      "passed": true,
+      "details": "Your growth shouldn't be bottlenecked by hiring cycles. We deploy top 1% LATAM engineers and AI-augmented GTM teams in 48 hours. Drop your email to see our vetted talent."
+    },
+    {
+      "name": "New UI text: No thanks, just looking",
+      "passed": true,
+      "details": "No thanks, just looking"
+    }
+  ],
+  "summary": {
+    "totalChecks": 133,
+    "passed": 130,
+    "failed": 3
+  }
+}

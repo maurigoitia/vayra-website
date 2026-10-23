@@ -1,0 +1,375 @@
+{
+  "verdict": "APPROVE",
+  "allPassed": true,
+  "testResults": [
+    {
+      "name": "Exit Modal & Dangling Listeners Null-Safety (TypeError 1325:19 fix)",
+      "pass": true,
+      "details": {
+        "exitElExists": true,
+        "exitElHidden": true,
+        "exitCloseExists": true,
+        "exitLaterExists": true,
+        "exitCopyExists": false,
+        "quoteBtnExists": false,
+        "renderCalcType": "undefined",
+        "testException": null
+      }
+    },
+    {
+      "name": "Extreme GTM Tab Switching (100 rapid cycles, sync parity & keyboard)",
+      "pass": true,
+      "details": {
+        "desyncCount": 0,
+        "tabCount": 5,
+        "selectedTabIdx": 2,
+        "agentStage": "Outreach",
+        "personStage": "Outreach",
+        "agentTextPresent": true,
+        "personTextPresent": true
+      }
+    },
+    {
+      "name": "Talent Rail Carousel Boundary & Overshoot Stress",
+      "pass": true,
+      "details": {
+        "boundaryErrors": [],
+        "startScroll": 4,
+        "endScroll": 467,
+        "scrollWidth": 1178,
+        "clientWidth": 711
+      }
+    },
+    {
+      "name": "FAQ Real-Time Synonym Search & Adversarial Robustness",
+      "pass": true,
+      "details": {
+        "results": {
+          "pricing": {
+            "query": "pricing",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "How much does senior talent in Latin America cost?"
+          },
+          "latam": {
+            "query": "latam",
+            "visibleCount": 3,
+            "emptyVisible": false,
+            "countText": "Showing 3 of 9 questions",
+            "firstVisibleSummary": "What is Vayra?"
+          },
+          "timezones": {
+            "query": "timezones",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "Where are your people based?"
+          },
+          "rates": {
+            "query": "rates",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "How much does senior talent in Latin America cost?"
+          },
+          "cost": {
+            "query": "cost",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "How much does senior talent in Latin America cost?"
+          },
+          "latin america": {
+            "query": "latin america",
+            "visibleCount": 3,
+            "emptyVisible": false,
+            "countText": "Showing 3 of 9 questions",
+            "firstVisibleSummary": "What is Vayra?"
+          },
+          "time zones": {
+            "query": "time zones",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "Where are your people based?"
+          },
+          "developers": {
+            "query": "developers",
+            "visibleCount": 2,
+            "emptyVisible": false,
+            "countText": "Showing 2 of 9 questions",
+            "firstVisibleSummary": "How much does senior talent in Latin America cost?"
+          },
+          "software engineers": {
+            "query": "software engineers",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "Which roles can Vayra provide?"
+          },
+          "SDRs": {
+            "query": "SDRs",
+            "visibleCount": 1,
+            "emptyVisible": false,
+            "countText": "Showing 1 of 9 questions",
+            "firstVisibleSummary": "Which roles can Vayra provide?"
+          },
+          "vetting": {
+            "query": "vetting",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          },
+          "'; DROP TABLE faqs; --": {
+            "query": "'; DROP TABLE faqs; --",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          },
+          "<script>alert(\"xss\")</script>": {
+            "query": "<script>alert(\"xss\")</script>",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          },
+          "${7*7}": {
+            "query": "${7*7}",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          },
+          "(\\d+)+$": {
+            "query": "(\\d+)+$",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          },
+          "   ": {
+            "query": "   ",
+            "visibleCount": 9,
+            "emptyVisible": false,
+            "countText": "Showing all 9 questions",
+            "firstVisibleSummary": "What is Vayra?"
+          },
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": {
+            "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "visibleCount": 0,
+            "emptyVisible": true,
+            "countText": "No questions found",
+            "firstVisibleSummary": null
+          }
+        },
+        "afterClearCount": 9,
+        "afterResetCount": 9
+      }
+    },
+    {
+      "name": "Time Zone Explorer Interactive City & Coast Reactivity",
+      "pass": true,
+      "details": {
+        "pinCount": 30,
+        "pinUpdates": [
+          {
+            "cityAttr": "mendoza",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Mendoza"
+          },
+          {
+            "cityAttr": "buenos-aires",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Buenos Aires"
+          },
+          {
+            "cityAttr": "cordoba",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Córdoba"
+          },
+          {
+            "cityAttr": "rosario",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Rosario"
+          },
+          {
+            "cityAttr": "montevideo",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Montevideo"
+          },
+          {
+            "cityAttr": "asuncion",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Asunción"
+          },
+          {
+            "cityAttr": "santiago",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Santiago"
+          },
+          {
+            "cityAttr": "lima",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Lima"
+          },
+          {
+            "cityAttr": "bogota",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Bogotá"
+          },
+          {
+            "cityAttr": "medellin",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Medellín"
+          },
+          {
+            "cityAttr": "cdmx",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "7 shared work hours, 2 hours behind you",
+            "stripTeam": "Mexico City"
+          },
+          {
+            "cityAttr": "guadalajara",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "7 shared work hours, 2 hours behind you",
+            "stripTeam": "Guadalajara"
+          },
+          {
+            "cityAttr": "sao-paulo",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "São Paulo"
+          },
+          {
+            "cityAttr": "rio",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Rio"
+          },
+          {
+            "cityAttr": "florianopolis",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Florianópolis"
+          },
+          {
+            "cityAttr": "mendoza",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Mendoza"
+          },
+          {
+            "cityAttr": "buenos-aires",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Buenos Aires"
+          },
+          {
+            "cityAttr": "cordoba",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Córdoba"
+          },
+          {
+            "cityAttr": "rosario",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Rosario"
+          },
+          {
+            "cityAttr": "montevideo",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Montevideo"
+          },
+          {
+            "cityAttr": "asuncion",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Asunción"
+          },
+          {
+            "cityAttr": "santiago",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Santiago"
+          },
+          {
+            "cityAttr": "lima",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Lima"
+          },
+          {
+            "cityAttr": "bogota",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Bogotá"
+          },
+          {
+            "cityAttr": "medellin",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour behind you",
+            "stripTeam": "Medellín"
+          },
+          {
+            "cityAttr": "cdmx",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "7 shared work hours, 2 hours behind you",
+            "stripTeam": "Mexico City"
+          },
+          {
+            "cityAttr": "guadalajara",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "7 shared work hours, 2 hours behind you",
+            "stripTeam": "Guadalajara"
+          },
+          {
+            "cityAttr": "sao-paulo",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "São Paulo"
+          },
+          {
+            "cityAttr": "rio",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Rio"
+          },
+          {
+            "cityAttr": "florianopolis",
+            "sayText": "It’s 12:25 PM in New York and ",
+            "sharedText": "8 shared work hours, 1 hour ahead of you",
+            "stripTeam": "Florianópolis"
+          }
+        ],
+        "hasSay": true,
+        "hasShared": true
+      }
+    },
+    {
+      "name": "Zero Runtime Exceptions & Zero Console Errors",
+      "pass": true,
+      "details": {
+        "runtimeExceptionsCount": 0,
+        "consoleErrorsCount": 0,
+        "runtimeExceptions": [],
+        "consoleErrors": []
+      }
+    }
+  ],
+  "timestamp": "2026-10-15T16:25:00.135Z"
+}
