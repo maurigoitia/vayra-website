@@ -1135,7 +1135,14 @@ footer nav a:hover{color:var(--fg)}
     var endpoint = form.getAttribute('data-endpoint');
     if (endpoint) {
       status.textContent = 'Sending...';
-      fetch(endpoint, {method:'POST', body:data, headers:{'Accept':'application/json'}}).then(function(r){
+      fetch(endpoint, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            fields: [...data].filter(([k, v]) => v).map(([name, value]) => ({name, value})),
+            context: {pageUri: location.href, pageName: document.title}
+          })
+        }).then(function(r){
         if (!r.ok) throw new Error();
         form.reset(); status.textContent = 'Thanks, ' + name.split(' ')[0] + '. You will get your rates within 24 hours.';
       }).catch(function(){ status.textContent = 'This could not be sent. Please email hello@vayra.team.'; });
@@ -1217,31 +1224,14 @@ footer nav a:hover{color:var(--fg)}
     var endpoint = $('qform').getAttribute('data-endpoint');
     $('exit-to').textContent = em;
     if (endpoint) {
-      var fieldMap = {
-        'email': 'email',
-        'role': 'vayra_role',
-        'level': 'vayra_level',
-        'team_size': 'vayra_team_size',
-        'city': 'city',
-        'source': 'message'
-      };
-      var hsFields = [];
-      data.forEach(function(value, key) {
-         if (fieldMap[key]) {
-             if (key === 'source') value = 'From exit intent popup';
-             hsFields.push({ name: fieldMap[key], value: value.toString() });
-         }
-      });
-      var payload = JSON.stringify({ fields: hsFields });
-
       fetch(endpoint, {
-        method: 'POST', 
-        body: payload, 
-        headers: {
-           'Content-Type': 'application/json',
-           'Accept': 'application/json'
-        }
-      }).catch(function(){});
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            fields: [...data].filter(([k, v]) => v).map(([name, value]) => ({name, value})),
+            context: {pageUri: location.href, pageName: document.title}
+          })
+        }).catch(function(){});
       $('exit-b-note').textContent = 'We reply within 24 hours.';
     } else {
       var lines = []; data.forEach(function(v, k){ lines.push(k.replace('_', ' ') + ': ' + v); });
