@@ -822,7 +822,7 @@ footer nav a:hover{color:var(--fg)}
         <p class="q-alt">Prefer email? Write to <a href="mailto:hello@vayra.team">hello@vayra.team</a>.</p>
       </div>
       <!-- QUOTE FORM: set data-endpoint to your form backend (HubSpot, Formspree or your own). While it is empty, sending opens an email to hello@vayra.team with the answers. -->
-      <form class="qform" id="qform" data-rv data-endpoint="" novalidate>
+      <form class="qform" id="qform" data-rv data-endpoint="https://api.hsforms.com/submissions/v3/integration/submit/51446706/fa64629a-cf22-46e0-be85-59b78dbb17a0" novalidate>
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
         <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
         <div class="field full"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required><span class="err" id="e-company"></span></div>
@@ -1217,7 +1217,31 @@ footer nav a:hover{color:var(--fg)}
     var endpoint = $('qform').getAttribute('data-endpoint');
     $('exit-to').textContent = em;
     if (endpoint) {
-      fetch(endpoint, {method:'POST', body:data, headers:{'Accept':'application/json'}}).catch(function(){});
+      var fieldMap = {
+        'email': 'email',
+        'role': 'vayra_role',
+        'level': 'vayra_level',
+        'team_size': 'vayra_team_size',
+        'city': 'city',
+        'source': 'message'
+      };
+      var hsFields = [];
+      data.forEach(function(value, key) {
+         if (fieldMap[key]) {
+             if (key === 'source') value = 'From exit intent popup';
+             hsFields.push({ name: fieldMap[key], value: value.toString() });
+         }
+      });
+      var payload = JSON.stringify({ fields: hsFields });
+
+      fetch(endpoint, {
+        method: 'POST', 
+        body: payload, 
+        headers: {
+           'Content-Type': 'application/json',
+           'Accept': 'application/json'
+        }
+      }).catch(function(){});
       $('exit-b-note').textContent = 'We reply within 24 hours.';
     } else {
       var lines = []; data.forEach(function(v, k){ lines.push(k.replace('_', ' ') + ': ' + v); });
