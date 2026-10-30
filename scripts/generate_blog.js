@@ -1,35 +1,69 @@
-const fs = require('fs');
-const path = require('path');
-const { JSDOM } = require('jsdom');
+const fs = require("fs");
+const path = require("path");
+const { JSDOM } = require("jsdom");
 
-// 1. Determine dates and file names
-const date = new Date();
-const dateStr = date.toISOString().split('T')[0]; // YYYY-MM-DD
-const slug = `${dateStr}-latam-tech-trends`;
-const fileName = `${slug}.html`;
+async function generate() {
+    const date = new Date();
+    const dateStr = date.toISOString().split("T")[0];
+    
+    // Choose a theme based on user requested topics
+    const themes = [
+        "Tech Events & Conferences: Latest takeaways from global tech events, what is coming, and how LATAM fits in.",
+        "Fintech in LATAM: Innovations, banking APIs, crypto, and why US Fintechs are scaling with LATAM engineers.",
+        "AI Agents & Alignment: News on autonomous agents, human alignment, and integrating agentic AI into products."
+    ];
+    const theme = themes[Math.floor(Math.random() * themes.length)];
+    
+    const slug = `${dateStr}-vayra-insights-${Math.floor(Math.random()*1000)}`;
+    const fileName = `${slug}.html`;
 
-const blogDir = path.join(__dirname, '../public/blog');
-const sitemapPath = path.join(__dirname, '../public/sitemap.xml');
-const blogIndexPath = path.join(__dirname, '../public/blog/index.html');
+    const blogDir = path.join(__dirname, "../public/blog");
+    const sitemapPath = path.join(__dirname, "../public/sitemap.xml");
+    const blogIndexPath = path.join(__dirname, "../public/blog/index.html");
 
-if (!fs.existsSync(blogDir)) {
-    fs.mkdirSync(blogDir, { recursive: true });
-}
+    if (!fs.existsSync(blogDir)) fs.mkdirSync(blogDir, { recursive: true });
 
-// 2. Fetch mock trends / Generate Content (This connects to AI)
-// For now, if no API key is provided, it generates a smart template.
-// A full AI integration would require the AI_API_KEY from env.
-const title = "Top LatAm Tech Trends: " + dateStr;
-const description = "Discover the latest software engineering and nearshore trends emerging from Latin America today.";
-const content = `
-    <h2>The Rise of LatAm Engineering</h2>
-    <p>Every day, more US companies are discovering the unparalleled value of nearshore engineering in Latin America. Today's trends show a massive increase in AI adoption and full-stack development across major hubs like Buenos Aires, Bogota, and Mexico City.</p>
-    <h2>Why it matters?</h2>
-    <p>Aligning timezones and cultural proximity allows agile teams to ship faster. At Vayra, we continuously monitor these trends to bring you the top 1% of talent.</p>
-`;
+    let title = "Vayra Insights: " + theme.split(":")[0];
+    let description = "Expert insights on " + theme.split(":")[0] + ".";
+    let content = `<p>Every day, US companies scale with LATAM engineering to tackle these trends.</p>`;
 
-// 3. Create the HTML file for the blog post
-const htmlContent = `<!DOCTYPE html>
+    const apiKey = process.env.AI_API_KEY;
+    if (apiKey) {
+        try {
+            console.log("Calling Gemini API for theme: " + theme);
+            const prompt = `You are a tech blogger for Vayra, an elite LATAM nearshore engineering staffing agency. Write a highly engaging, SEO-optimized blog post in HTML format (no <html> or <body> tags, just <h2>, <p>, <ul>). 
+Today Theme: ${theme}.
+Discuss recent news, events, or trends on this topic. Tie it back to why building a dedicated, senior LATAM engineering team with Vayra helps companies stay ahead.
+Output a JSON block at the start:
+\`\`\`json
+{"title": "Catchy Title", "description": "Short meta description"}
+\`\`\`
+Followed by the HTML content.`;
+
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+            });
+            const data = await response.json();
+            if (data.candidates && data.candidates[0].content) {
+                const text = data.candidates[0].content.parts[0].text;
+                const jsonMatch = text.match(/\`\`\`json\n([\s\S]*?)\n\`\`\`/);
+                if (jsonMatch) {
+                    const meta = JSON.parse(jsonMatch[1]);
+                    title = meta.title || title;
+                    description = meta.description || description;
+                }
+                content = text.replace(/\`\`\`json\n[\s\S]*?\n\`\`\`/, "").replace(/\`\`\`html/, "").replace(/\`\`\`/, "").trim();
+            }
+        } catch (e) {
+            console.error("API Error:", e);
+        }
+    } else {
+        console.log("No AI_API_KEY provided. Using fallback content.");
+    }
+
+    const htmlContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,51 +72,47 @@ const htmlContent = `<!DOCTYPE html>
     <meta name="description" content="${description}">
     <link rel="stylesheet" href="../styles.css">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0E100D; color: #F5F6F2; padding: 2rem; max-width: 800px; margin: auto; }
-        h1 { color: #C6F432; }
-        .back { color: #F5F6F2; text-decoration: none; margin-bottom: 2rem; display: inline-block; opacity: 0.7; }
-        .back:hover { opacity: 1; }
-        .content { line-height: 1.6; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0B0C0A; color: #F2F4EC; padding: 2rem; max-width: 800px; margin: auto; }
+        h1 { color: #C6F432; font-size: 2.5rem; line-height: 1.1; margin-bottom: 0.5rem; }
+        .back { color: #A8AD9E; text-decoration: none; margin-bottom: 2rem; display: inline-block; font-weight: 500; }
+        .back:hover { color: #C6F432; }
+        .content { line-height: 1.7; font-size: 1.1rem; color: #A8AD9E; }
+        .content h2 { margin-top: 2.5rem; color: #F2F4EC; font-size: 1.8rem; }
+        .content p { margin-bottom: 1.5rem; }
+        .content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .content li { margin-bottom: 0.5rem; }
+        .date { color: #A8AD9E; font-size: 0.9rem; margin-bottom: 2rem; display: block; }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back">&larr; Back to Blog</a>
+    <a href="index.html" class="back">&larr; Back to all posts</a>
     <h1>${title}</h1>
+    <span class="date">${dateStr}</span>
     <div class="content">
         ${content}
     </div>
 </body>
 </html>`;
 
-fs.writeFileSync(path.join(blogDir, fileName), htmlContent);
-console.log(`Created new blog post: ${fileName}`);
+    fs.writeFileSync(path.join(blogDir, fileName), htmlContent);
+    console.log("Created: " + fileName);
 
-// 4. Update Sitemap
-if (fs.existsSync(sitemapPath)) {
-    let sitemap = fs.readFileSync(sitemapPath, 'utf8');
-    const newUrlEntry = `
-  <url>
-    <loc>https://vayra.team/blog/${fileName}</loc>
-    <lastmod>${dateStr}</lastmod>
-  </url>
-</urlset>`;
-    sitemap = sitemap.replace('</urlset>', newUrlEntry);
-    fs.writeFileSync(sitemapPath, sitemap);
-    console.log(`Updated sitemap.xml with ${fileName}`);
-}
+    if (fs.existsSync(sitemapPath)) {
+        let sitemap = fs.readFileSync(sitemapPath, "utf8");
+        sitemap = sitemap.replace("</urlset>", `  <url>\n    <loc>https://vayra.team/blog/${fileName}</loc>\n    <lastmod>${dateStr}</lastmod>\n  </url>\n</urlset>`);
+        fs.writeFileSync(sitemapPath, sitemap);
+    }
 
-// 5. Update Blog Index (using JSDOM to parse and inject)
-if (fs.existsSync(blogIndexPath)) {
-    const indexHtml = fs.readFileSync(blogIndexPath, 'utf8');
-    const dom = new JSDOM(indexHtml);
-    const document = dom.window.document;
-    const ul = document.querySelector('ul') || document.querySelector('.blog-list');
-    
-    if (ul) {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${fileName}">${title}</a> - <span>${dateStr}</span>`;
-        ul.insertBefore(li, ul.firstChild);
-        fs.writeFileSync(blogIndexPath, dom.serialize());
-        console.log(`Updated blog/index.html with link to ${fileName}`);
+    if (fs.existsSync(blogIndexPath)) {
+        const dom = new JSDOM(fs.readFileSync(blogIndexPath, "utf8"));
+        const ul = dom.window.document.querySelector("ul") || dom.window.document.querySelector(".blog-list");
+        if (ul) {
+            const li = dom.window.document.createElement("li");
+            li.innerHTML = `<a href="${fileName}" style="color: #C6F432; text-decoration: none; font-size: 1.2rem; display: block; margin-bottom: 0.2rem;">${title}</a> <span style="color: #A8AD9E; font-size: 0.9rem;">${dateStr}</span>`;
+            li.style.marginBottom = "1.5rem";
+            ul.insertBefore(li, ul.firstChild);
+            fs.writeFileSync(blogIndexPath, dom.serialize());
+        }
     }
 }
+generate();
